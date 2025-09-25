@@ -72,13 +72,13 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-primary">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-white/80">
             Get answers to common questions about our funding programs
           </p>
         </div>
@@ -88,12 +88,12 @@ const FAQ = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="border border-border rounded-lg px-6 hover:shadow-md transition-shadow duration-300"
+              className="bg-white/95 backdrop-blur border-0 rounded-xl px-6 hover:bg-white hover:shadow-lg transition-all duration-300"
             >
-              <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary transition-colors py-6 [&[data-state=open]]:text-primary">
+              <AccordionTrigger className="text-left text-lg font-semibold text-primary hover:text-primary-dark transition-colors py-6 [&[data-state=open]]:text-primary-dark [&>svg]:text-primary">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pb-6 leading-relaxed whitespace-pre-line">
+              <AccordionContent className="text-gray-700 pb-6 leading-relaxed whitespace-pre-line">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
