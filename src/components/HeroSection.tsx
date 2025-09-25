@@ -31,7 +31,7 @@ const HeroSection = () => {
             </div>
             
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold leading-tight">
                 Engineering an
                 <br />
                 <span className="text-accent-light">inclusive microeconomic foundation</span>
@@ -56,7 +56,7 @@ const HeroSection = () => {
           
           {/* Right Column - Impact Stats */}
           <div className="space-y-6">
-            <Card className="bg-white/10 border-white/20 backdrop-blur-lg shadow-2xl">
+            <Card className="bg-white/50 border-white/20 backdrop-blur-lg shadow-2xl">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
                   <span className="w-2 h-2 bg-accent rounded-full"></span>
