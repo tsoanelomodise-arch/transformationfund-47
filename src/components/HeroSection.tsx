@@ -56,27 +56,24 @@ const HeroSection = () => {
           
           {/* Right Column - Impact Stats */}
           <div className="space-y-6">
-            <Card className="bg-gradient-to-br from-orange-500/95 to-orange-600/95 border-orange-400/30 backdrop-blur-lg shadow-2xl">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full"></span>
-                  Impact Overview
-                </h3>
-                
-                <div className="grid grid-cols-2 gap-6">
-                  {impactStats.map((stat, index) => (
-                    <div key={index} className="text-center">
-                      <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                        {stat.value}
-                      </div>
-                      <div className="text-white/90 text-sm font-medium">
-                        {stat.label}
-                      </div>
+            <div className="bg-white/10 border border-white/20 rounded-xl backdrop-blur-sm p-8">
+              <h3 className="text-xl font-bold text-white mb-8 text-center">
+                Impact Overview
+              </h3>
+              
+              <div className="grid grid-cols-2 gap-8">
+                {impactStats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+                      {stat.value}
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                    <div className="text-white/80 text-sm font-medium">
+                      {stat.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
             
             {/* Additional Info Cards */}
             <div className="grid grid-cols-2 gap-4">

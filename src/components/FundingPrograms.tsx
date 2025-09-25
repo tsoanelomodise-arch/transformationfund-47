@@ -46,7 +46,7 @@ const FundingPrograms = () => {
   ];
 
   return (
-    <section id="programs" className="py-24 bg-primary/10">
+    <section id="programs" className="py-16 bg-primary/10">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">

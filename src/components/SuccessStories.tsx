@@ -31,7 +31,7 @@ const SuccessStories = () => {
 
   return (
     <section 
-      className="py-24 relative bg-cover bg-center bg-no-repeat"
+      className="py-16 relative bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${successStoriesBg})` }}
     >
       {/* Background Overlay */}

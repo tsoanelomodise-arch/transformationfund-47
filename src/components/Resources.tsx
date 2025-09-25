@@ -26,7 +26,7 @@ const Resources = () => {
   ];
 
   return (
-    <section id="resources" className="py-24 bg-gray-50">
+    <section id="resources" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
