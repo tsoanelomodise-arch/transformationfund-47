@@ -1,5 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 const SuccessStories = () => {
   const stories = [
     {
@@ -7,26 +5,27 @@ const SuccessStories = () => {
       industry: "Software Development",
       quote: "Fund Ignite's SME Development Fund enabled us to expand our team from 8 to 45 employees and secure major enterprise contracts. The mentorship program was invaluable.",
       metrics: [
-        { label: "Funding Received", value: "R2.5M" },
-        { label: "Jobs Created", value: "37" },
-        { label: "Revenue Growth", value: "450%" }
+        { value: "R2.5M", label: "Funding Received" },
+        { value: "37", label: "Jobs Created" },
+        { value: "450%", label: "Revenue Growth" }
       ]
     },
     {
       company: "Green Energy Co",
-      industry: "Renewable Energy", 
+      industry: "Renewable Energy",
       quote: "The Transformation Fund helped us achieve Level 4 B-BBEE status while expanding our solar installation capacity. We've become a leading player in renewable energy.",
       metrics: [
-        { label: "Funding Received", value: "R8.2M" },
-        { label: "Jobs Created", value: "120" },
-        { label: "B-BBEE Status", value: "Level 4" }
+        { value: "R8.2M", label: "Funding Received" },
+        { value: "120", label: "Jobs Created" },
+        { value: "Level 4", label: "B-BBEE Status" }
       ]
     }
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-4 max-w-7xl">
+        {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Success Stories
@@ -36,41 +35,40 @@ const SuccessStories = () => {
           </p>
         </div>
         
+        {/* Stories Grid */}
         <div className="grid lg:grid-cols-2 gap-8">
           {stories.map((story, index) => (
-            <Card key={index} className="group hover:shadow-[var(--card-shadow-hover)] transition-all duration-500 hover:-translate-y-3 border-0 shadow-[var(--card-shadow)] bg-gradient-to-br from-card to-card/80">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between mb-4">
-                  <CardTitle className="text-2xl group-hover:text-primary transition-colors">
-                    {story.company}
-                  </CardTitle>
-                  <span className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full">
-                    {story.industry}
-                  </span>
+            <div key={index} className="bg-white rounded-2xl p-8 shadow-sm border border-border/50 hover:shadow-md transition-shadow duration-300">
+              {/* Company Header */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center">
+                  <div className="w-8 h-8 bg-primary-light rounded-lg"></div>
                 </div>
-                
-                <blockquote className="text-lg italic text-muted-foreground leading-relaxed relative">
-                  <span className="absolute -top-2 -left-1 text-4xl text-primary/20">"</span>
-                  {story.quote}
-                  <span className="absolute -bottom-6 -right-1 text-4xl text-primary/20">"</span>
-                </blockquote>
-              </CardHeader>
+                <div>
+                  <h3 className="text-xl font-bold text-foreground">{story.company}</h3>
+                  <p className="text-muted-foreground">{story.industry}</p>
+                </div>
+              </div>
               
-              <CardContent className="pt-8">
-                <div className="grid grid-cols-3 gap-4">
-                  {story.metrics.map((metric, metricIndex) => (
-                    <div key={metricIndex} className="text-center">
-                      <div className="text-2xl md:text-3xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                        {metric.value}
-                      </div>
-                      <div className="text-sm text-muted-foreground font-medium">
-                        {metric.label}
-                      </div>
+              {/* Quote */}
+              <blockquote className="text-muted-foreground mb-8 text-lg leading-relaxed">
+                "{story.quote}"
+              </blockquote>
+              
+              {/* Metrics */}
+              <div className="grid grid-cols-3 gap-6">
+                {story.metrics.map((metric, metricIndex) => (
+                  <div key={metricIndex} className="text-center">
+                    <div className="text-2xl font-bold text-primary mb-1">
+                      {metric.value}
                     </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                    <div className="text-sm text-muted-foreground">
+                      {metric.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
