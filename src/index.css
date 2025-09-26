@@ -44,8 +44,8 @@ All colors MUST be HSL.
 
     /* Design system tokens */
     --hero-gradient: linear-gradient(135deg, 
-      hsl(158 64% 25% / 0.8), 
-      hsl(158 64% 35% / 0.8));
+      hsl(158 64% 25% / 0.95), 
+      hsl(158 64% 35% / 0.95));
     
     /* Orange brand color - #ffb81c converted to HSL */
     --orange: 43 100% 56%;
@@ -113,8 +113,8 @@ All colors MUST be HSL.
     --ring: 158 64% 45%;
 
     --hero-gradient: linear-gradient(135deg, 
-      hsl(220 15% 9% / 0.8), 
-      hsl(158 64% 25% / 0.8));
+      hsl(220 15% 9% / 0.95), 
+      hsl(158 64% 25% / 0.95));
     
     --orange: 43 100% 56%;
     --orange-foreground: 0 0% 100%;
