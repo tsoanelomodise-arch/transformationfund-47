@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Receipt, Users, Target } from "lucide-react";
 import startupGrantsHeader from "@/assets/startup-grants-header.jpg";
 import Footer from "@/components/Footer";
 
@@ -28,34 +29,59 @@ const StartupGrants = () => {
         </div>
       </section>
 
-      {/* Overview Section */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
+      {/* Program Overview Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900">
               Program Overview
             </h2>
-            <Card className="mb-8">
-              <CardContent className="p-8">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-4">Instrument</h3>
-                    <p className="text-muted-foreground mb-6">
-                      Small startup grants or convertible "vouchers" for early-stage and informal enterprises.
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-4">Target Businesses</h3>
-                    <ul className="text-muted-foreground space-y-2">
-                      <li>• Township shopkeepers expanding into formal storefronts</li>
-                      <li>• Youth-led tech micro-enterprises</li>
-                      <li>• Entrepreneurs building prototypes</li>
-                      <li>• Informal businesses seeking formalization</li>
-                    </ul>
-                  </div>
+            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+              Small startup grants and capability vouchers for early-stage enterprises
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-16">
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-8 bg-teal-100 rounded-3xl flex items-center justify-center shadow-sm">
+                <Receipt className="w-12 h-12 text-teal-700" />
+              </div>
+              <h3 className="text-2xl font-bold mb-6 text-slate-900">
+                Instrument
+              </h3>
+              <p className="text-slate-600 leading-relaxed text-lg">
+                Small startup grants or convertible "vouchers" for early-stage and informal enterprises.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-8 bg-teal-100 rounded-3xl flex items-center justify-center shadow-sm">
+                <Users className="w-12 h-12 text-teal-700" />
+              </div>
+              <h3 className="text-2xl font-bold mb-6 text-slate-900">
+                Target Businesses
+              </h3>
+              <div className="text-slate-600 leading-relaxed text-lg text-left">
+                <div className="space-y-2">
+                  <p>• Township shopkeepers expanding into formal storefronts</p>
+                  <p>• Youth-led tech micro-enterprises</p>
+                  <p>• Entrepreneurs building prototypes</p>
+                  <p>• Informal businesses seeking formalization</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-24 h-24 mx-auto mb-8 bg-orange-100 rounded-3xl flex items-center justify-center shadow-sm">
+                <Target className="w-12 h-12 text-orange-600" />
+              </div>
+              <h3 className="text-2xl font-bold mb-6 text-slate-900">
+                Product–Market Fit
+              </h3>
+              <p className="text-slate-600 leading-relaxed text-lg">
+                Tailored to micro and informal businesses that cannot navigate complex loan applications with minimal paperwork.
+              </p>
+            </div>
           </div>
         </div>
       </section>
