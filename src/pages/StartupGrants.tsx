@@ -1,103 +1,137 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Target, Users, TrendingUp } from "lucide-react";
 import startupGrantsHeader from "@/assets/startup-grants-header.jpg";
 import Footer from "@/components/Footer";
 
 const StartupGrants = () => {
   return (
-    <main className="min-h-screen">
-      {/* Header Section */}
-      <section className="relative h-96 overflow-hidden">
+    <main className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${startupGrantsHeader})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/70" />
-        <div className="relative container mx-auto px-4 h-full flex items-center">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Startup and Informal Business Grants
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-slate-900/40" />
+        <div className="relative container mx-auto px-6 lg:px-8 z-10">
+          <div className="max-w-4xl">
+            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
+              <span className="text-primary font-medium text-sm">Funding Program</span>
+            </div>
+            <h1 className="text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight">
+              Where <span className="text-primary">Talent</span><br />
+              Drives Success
             </h1>
-            <p className="text-lg text-muted-foreground mb-6">
-              Capability vouchers designed to provide seed capital for early-stage and informal enterprises
+            <p className="text-xl lg:text-2xl text-slate-200 mb-10 leading-relaxed max-w-2xl">
+              Capability vouchers designed to provide seed capital for early-stage and informal enterprises ready to scale
             </p>
-            <Button size="lg" variant="cta">
-              Apply Now
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-full">
+                Start Application
+              </Button>
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 text-lg font-semibold rounded-full">
+                Learn More
+              </Button>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Program Overview Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
-              Program Overview
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-6 lg:px-8 max-w-7xl">
+          <div className="text-center mb-20">
+            <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
+              <span className="text-primary font-medium text-sm">Program Overview</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900 leading-tight">
+              Empowering Your Business Journey
             </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              Designed specifically for entrepreneurs who need more than just funding – we provide the complete toolkit for sustainable growth
+            </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-green-600 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-slate-900">
-                Instrument
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                Small startup grants or convertible "vouchers" for early-stage and informal enterprises.
-              </p>
-            </div>
+          <div className="grid lg:grid-cols-3 gap-10">
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl overflow-hidden">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-6 text-slate-900 text-center">
+                  Smart Instrument
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-center text-lg">
+                  Small startup grants and convertible vouchers specifically designed for early-stage and informal enterprises seeking growth opportunities.
+                </p>
+              </CardContent>
+            </Card>
             
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-green-600 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-slate-900">
-                Target Businesses
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                Township shopkeepers, youth-led tech enterprises, entrepreneurs building prototypes, and informal businesses seeking formalization.
-              </p>
-            </div>
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl overflow-hidden">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-6 text-slate-900 text-center">
+                  Target Businesses
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-center text-lg">
+                  Township shopkeepers, youth-led tech enterprises, entrepreneurs building prototypes, and informal businesses seeking formalization.
+                </p>
+              </CardContent>
+            </Card>
             
-            <div className="text-center">
-              <div className="w-16 h-16 mx-auto mb-6 bg-green-600 rounded-full flex items-center justify-center">
-                <CheckCircle className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-4 text-slate-900">
-                Product–Market Fit
-              </h3>
-              <p className="text-slate-600 leading-relaxed">
-                Tailored to micro and informal businesses that cannot navigate complex loan applications with minimal paperwork.
-              </p>
-            </div>
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl overflow-hidden">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-6 text-slate-900 text-center">
+                  Perfect Market Fit
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-center text-lg">
+                  Tailored for micro and informal businesses that struggle with complex applications – featuring minimal paperwork and maximum impact.
+                </p>
+              </CardContent>
+            </Card>
           </div>
           
-          <div className="mt-12 text-center">
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium">
-              Learn About Program Details →
+          <div className="mt-16 text-center">
+            <Button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              Explore Program Details →
             </Button>
           </div>
         </div>
       </section>
 
       {/* Use Case Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-              Use Case
-            </h2>
-            <Card>
-              <CardContent className="p-8">
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  Provide seed capital to entrepreneurs who lack initial funding or collateral – for example, 
-                  a township shopkeeper expanding into a formal storefront, or a youth-led tech micro-enterprise 
-                  building a prototype.
-                </p>
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
+                <span className="text-primary font-medium text-sm">Real Impact</span>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                Inside Our Success Stories
+              </h2>
+            </div>
+            <Card className="border-0 bg-gradient-to-br from-slate-50 to-white rounded-3xl shadow-xl overflow-hidden">
+              <CardContent className="p-12">
+                <div className="text-center">
+                  <div className="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center">
+                    <CheckCircle className="w-10 h-10 text-white" />
+                  </div>
+                  <blockquote className="text-xl lg:text-2xl text-slate-700 leading-relaxed font-medium">
+                    "We provide seed capital to entrepreneurs who lack initial funding or collateral – transforming 
+                    township shopkeepers into formal business owners and empowering youth-led tech enterprises 
+                    to build game-changing prototypes."
+                  </blockquote>
+                  <div className="mt-8 text-primary font-semibold text-lg">
+                    Real entrepreneurs, real growth, real impact
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -105,46 +139,76 @@ const StartupGrants = () => {
       </section>
 
       {/* Product-Market Fit Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
-                Product–Market Fit
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
+                <span className="text-primary font-medium text-sm">Your Journey</span>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-slate-900 leading-tight">
+                Three Steps to Success
               </h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                Our streamlined process eliminates bureaucratic complexity while ensuring your business is set up for sustainable growth
+              </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-12 mb-12">
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-green-600 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">1</span>
-                </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-4">Register Business</h4>
-                <p className="text-slate-600 leading-relaxed">Complete business registration process</p>
+            <div className="grid lg:grid-cols-3 gap-10 mb-16">
+              <div className="relative">
+                <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl overflow-hidden h-full">
+                  <CardContent className="p-8 text-center h-full flex flex-col">
+                    <div className="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">01</span>
+                    </div>
+                    <h4 className="text-2xl font-bold text-slate-900 mb-6">Register Business</h4>
+                    <p className="text-slate-600 leading-relaxed text-lg flex-grow">Complete our streamlined business registration process with minimal paperwork</p>
+                  </CardContent>
+                </Card>
+                {/* Connector line */}
+                <div className="hidden lg:block absolute -right-5 top-1/2 w-10 h-0.5 bg-gradient-to-r from-primary to-primary/50 transform -translate-y-1/2"></div>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-green-600 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">2</span>
-                </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-4">Complete Training</h4>
-                <p className="text-slate-600 leading-relaxed">Finish required capability training</p>
+              
+              <div className="relative">
+                <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl overflow-hidden h-full">
+                  <CardContent className="p-8 text-center h-full flex flex-col">
+                    <div className="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl font-bold text-white">02</span>
+                    </div>
+                    <h4 className="text-2xl font-bold text-slate-900 mb-6">Complete Training</h4>
+                    <p className="text-slate-600 leading-relaxed text-lg flex-grow">Finish our comprehensive capability training program designed for your success</p>
+                  </CardContent>
+                </Card>
+                {/* Connector line */}
+                <div className="hidden lg:block absolute -right-5 top-1/2 w-10 h-0.5 bg-gradient-to-r from-primary to-primary/50 transform -translate-y-1/2"></div>
               </div>
-              <div className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-green-600 rounded-full flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">3</span>
-                </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-4">Hit Sales Target</h4>
-                <p className="text-slate-600 leading-relaxed">Achieve first sales milestone</p>
-              </div>
+              
+              <Card className="group hover:shadow-xl transition-all duration-300 border-0 bg-white rounded-2xl overflow-hidden h-full">
+                <CardContent className="p-8 text-center h-full flex flex-col">
+                  <div className="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-2xl font-bold text-white">03</span>
+                  </div>
+                  <h4 className="text-2xl font-bold text-slate-900 mb-6">Hit Sales Target</h4>
+                  <p className="text-slate-600 leading-relaxed text-lg flex-grow">Achieve your first sales milestone and unlock continued funding support</p>
+                </CardContent>
+              </Card>
             </div>
 
-            <Card className="bg-white border-0 shadow-sm">
-              <CardContent className="p-8 text-center">
-                <p className="text-slate-600 text-lg leading-relaxed">
-                  Tailored to micro and informal businesses that cannot navigate complex loan applications. 
-                  These grants would be easy-access (minimal paperwork) and disbursed in tranches linked 
-                  to developmental milestones.
-                </p>
+            <Card className="bg-gradient-to-br from-white to-slate-50 border-0 shadow-xl rounded-3xl overflow-hidden">
+              <CardContent className="p-12 text-center">
+                <div className="max-w-4xl mx-auto">
+                  <div className="w-16 h-16 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center">
+                    <CheckCircle className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-6">
+                    Designed for Real Businesses
+                  </h3>
+                  <p className="text-xl text-slate-600 leading-relaxed">
+                    Specifically tailored for micro and informal businesses that struggle with complex loan applications. 
+                    Our grants feature easy access with minimal paperwork, disbursed in tranches linked to developmental milestones 
+                    that ensure both funding and capability growth.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -152,44 +216,92 @@ const StartupGrants = () => {
       </section>
 
       {/* Overcoming Bureaucratic Failures Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-              Overcoming Bureaucratic Failures
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-4">Traditional Approach</h3>
-                  <ul className="text-muted-foreground space-y-2">
-                    <li>• Lengthy application forms</li>
-                    <li>• Significant delays</li>
-                    <li>• Complex compliance requirements</li>
-                    <li>• Money without capacity building</li>
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
+                <span className="text-primary font-medium text-sm">Our Difference</span>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                Breaking Through Bureaucracy
+              </h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                We've reimagined the funding process from the ground up, eliminating traditional barriers while ensuring sustainable growth
+              </p>
+            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 mb-16">
+              <Card className="border-0 bg-slate-50 rounded-3xl overflow-hidden shadow-lg">
+                <CardContent className="p-10">
+                  <div className="w-16 h-16 mb-8 bg-slate-400 rounded-2xl flex items-center justify-center">
+                    <span className="text-2xl">❌</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-6">Traditional Approach</h3>
+                  <ul className="text-slate-600 space-y-4 text-lg">
+                    <li className="flex items-start">
+                      <span className="text-slate-400 mr-3 mt-1">•</span>
+                      Lengthy application forms that discourage applicants
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-slate-400 mr-3 mt-1">•</span>
+                      Significant delays causing missed opportunities
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-slate-400 mr-3 mt-1">•</span>
+                      Complex compliance requirements
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-slate-400 mr-3 mt-1">•</span>
+                      Money without capacity building
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-foreground mb-4">Our Solution</h3>
-                  <ul className="text-muted-foreground space-y-2">
-                    <li>• Streamlined digital platform</li>
-                    <li>• Focus on outcomes, not paperwork</li>
-                    <li>• Conditional grants with capability requirements</li>
-                    <li>• Embedded technical support</li>
+              
+              <Card className="border-0 bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl overflow-hidden shadow-lg">
+                <CardContent className="p-10">
+                  <div className="w-16 h-16 mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center">
+                    <CheckCircle className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Solution</h3>
+                  <ul className="text-slate-700 space-y-4 text-lg">
+                    <li className="flex items-start">
+                      <CheckCircle className="text-primary mr-3 mt-1 w-5 h-5 flex-shrink-0" />
+                      Streamlined digital platform for quick applications
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-primary mr-3 mt-1 w-5 h-5 flex-shrink-0" />
+                      Focus on outcomes, not paperwork
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-primary mr-3 mt-1 w-5 h-5 flex-shrink-0" />
+                      Conditional grants with capability requirements
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="text-primary mr-3 mt-1 w-5 h-5 flex-shrink-0" />
+                      Embedded technical support throughout your journey
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
             </div>
-            <Card className="mt-8">
-              <CardContent className="p-8">
-                <p className="text-muted-foreground text-lg leading-relaxed">
-                  The grant can be conditional on the enterprise adopting certain capability enhancements 
-                  (e.g. basic bookkeeping on the Fund's platform), which both simplifies reporting and 
-                  improves the business's chance of survival. Embedding these conditions addresses a common 
-                  failure of past schemes where money alone was given without improving the recipient's capacity.
-                </p>
+            
+            <Card className="bg-gradient-to-br from-slate-900 to-slate-800 border-0 rounded-3xl overflow-hidden shadow-2xl">
+              <CardContent className="p-12 text-center">
+                <div className="max-w-4xl mx-auto">
+                  <div className="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center">
+                    <TrendingUp className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+                    Smart Conditions, Better Outcomes
+                  </h3>
+                  <p className="text-xl text-slate-300 leading-relaxed">
+                    Our grants are conditional on enterprises adopting capability enhancements like basic bookkeeping 
+                    on our platform. This approach both simplifies reporting and dramatically improves business survival rates – 
+                    addressing the common failure of past schemes where money alone was distributed without building recipient capacity.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -197,22 +309,45 @@ const StartupGrants = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-primary/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">
-              Ready to Apply for Startup Grants?
+      <section className="py-24 bg-gradient-to-br from-primary to-primary/80 relative overflow-hidden">
+        <div className="absolute inset-0 bg-primary/10 opacity-20">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }}></div>
+        </div>
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block px-4 py-2 bg-white/20 rounded-full mb-8">
+              <span className="text-white font-medium text-sm">Ready to Start?</span>
+            </div>
+            <h2 className="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+              Turn Your Vision Into 
+              <span className="block">Reality Today</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Get the seed capital and capability support you need to formalize and grow your business.
+            <p className="text-xl lg:text-2xl text-white/90 mb-12 leading-relaxed max-w-3xl mx-auto">
+              Join hundreds of entrepreneurs who've transformed their businesses with our comprehensive funding and capability support program
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="cta">
-                Start Application
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button size="lg" className="bg-white text-primary hover:bg-slate-100 px-10 py-4 text-lg font-semibold rounded-full shadow-xl hover:shadow-2xl transition-all duration-300">
+                Start Your Application
               </Button>
-              <Button size="lg" variant="outline">
-                Learn More
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary px-10 py-4 text-lg font-semibold rounded-full transition-all duration-300">
+                Schedule Consultation
               </Button>
+            </div>
+            <div className="mt-12 flex items-center justify-center gap-8 text-white/80">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5" />
+                <span>No Lengthy Paperwork</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5" />
+                <span>Fast Approval</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-5 h-5" />
+                <span>Ongoing Support</span>
+              </div>
             </div>
           </div>
         </div>
