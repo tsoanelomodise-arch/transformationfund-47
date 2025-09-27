@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Receipt, Users, Target } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import startupGrantsHeader from "@/assets/startup-grants-header.jpg";
 import Footer from "@/components/Footer";
 
@@ -43,8 +43,8 @@ const StartupGrants = () => {
           
           <div className="grid md:grid-cols-3 gap-16">
             <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-8 bg-teal-100 rounded-3xl flex items-center justify-center shadow-sm">
-                <Receipt className="w-12 h-12 text-teal-700" />
+              <div className="w-24 h-24 mx-auto mb-8 bg-green-100 rounded-full flex items-center justify-center shadow-sm">
+                <CheckCircle className="w-12 h-12 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold mb-6 text-slate-900">
                 Instrument
@@ -55,8 +55,8 @@ const StartupGrants = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-8 bg-teal-100 rounded-3xl flex items-center justify-center shadow-sm">
-                <Users className="w-12 h-12 text-teal-700" />
+              <div className="w-24 h-24 mx-auto mb-8 bg-green-100 rounded-full flex items-center justify-center shadow-sm">
+                <CheckCircle className="w-12 h-12 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold mb-6 text-slate-900">
                 Target Businesses
@@ -72,8 +72,8 @@ const StartupGrants = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-24 h-24 mx-auto mb-8 bg-orange-100 rounded-3xl flex items-center justify-center shadow-sm">
-                <Target className="w-12 h-12 text-orange-600" />
+              <div className="w-24 h-24 mx-auto mb-8 bg-green-100 rounded-full flex items-center justify-center shadow-sm">
+                <CheckCircle className="w-12 h-12 text-green-600" />
               </div>
               <h3 className="text-2xl font-bold mb-6 text-slate-900">
                 Product–Market Fit
@@ -82,6 +82,12 @@ const StartupGrants = () => {
                 Tailored to micro and informal businesses that cannot navigate complex loan applications with minimal paperwork.
               </p>
             </div>
+          </div>
+          
+          <div className="mt-16 text-center">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-3">
+              Learn About Program Details
+            </Button>
           </div>
         </div>
       </section>
