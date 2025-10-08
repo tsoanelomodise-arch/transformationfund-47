@@ -9,6 +9,7 @@ import OperatingModel from "@/components/transformation/OperatingModel";
 import ImplementationPlan from "@/components/transformation/ImplementationPlan";
 import NationalAgenda from "@/components/transformation/NationalAgenda";
 import ScrollToTop from "@/components/transformation/ScrollToTop";
+import Footer from "@/components/transformation/Footer";
 
 const TransformationIndex = () => {
   useEffect(() => {
@@ -41,6 +42,7 @@ const TransformationIndex = () => {
         <ImplementationPlan />
         <NationalAgenda />
       </main>
+      <Footer />
       <ScrollToTop />
     </div>
   );
