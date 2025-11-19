@@ -76,11 +76,8 @@ const HeroSectionNew = () => {
           {/* Main Content */}
           <div className="flex-1 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
-              Engineering an Inclusive Microeconomic Foundation
+              Engineering an Inclusive Microeconomic Foundation for Macroeconomic Growth and Social Stability
             </h1>
-            <p className="text-xl md:text-2xl mb-8 drop-shadow-lg max-w-4xl mx-auto">
-              For Macroeconomic Growth and Social Stability
-            </p>
             <p className="text-lg md:text-xl mb-12 drop-shadow-lg max-w-3xl mx-auto">
               South Africa's national platform pooling resources to create systemic impact for inclusive economic growth
             </p>
