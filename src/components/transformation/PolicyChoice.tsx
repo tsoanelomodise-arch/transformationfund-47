@@ -61,6 +61,24 @@ const PolicyChoice = () => {
               </li>
             </ul>
           </div>
+
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary">
+            <h3 className="text-2xl font-bold mb-6 text-white">Tax and regulatory incentives</h3>
+            <ul className="space-y-4 text-white">
+              <li className="flex items-start">
+                <span className="mr-3 font-bold">a.</span>
+                <span>Contributions to the Fund are mostly tax-exempt under section 56(1)(h) of the Income Tax Act.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 font-bold">b.</span>
+                <span>Donors may claim a deduction under section 18A once a confirmation of receipt is issued.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 font-bold">c.</span>
+                <span>Contributors will sign Participation Agreements with the SPV that regulate contributions and investment terms.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
