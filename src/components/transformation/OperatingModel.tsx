@@ -15,25 +15,25 @@ const OperatingModel = () => {
           <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-gray-100 p-1 rounded-lg h-auto">
             <TabsTrigger 
               value="capital" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all"
+              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
             >
               Access to Capital
             </TabsTrigger>
             <TabsTrigger 
               value="capability" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all"
+              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
             >
               Access to Capability
             </TabsTrigger>
             <TabsTrigger 
               value="markets" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all"
+              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
             >
               Access to Markets
             </TabsTrigger>
             <TabsTrigger 
               value="index" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-gray-900 data-[state=active]:text-white transition-all"
+              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
             >
               Transformation Index
             </TabsTrigger>
