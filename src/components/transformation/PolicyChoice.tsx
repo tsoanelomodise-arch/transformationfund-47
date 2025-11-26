@@ -12,7 +12,7 @@ const PolicyChoice = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="bg-green-600 p-10 rounded-lg border-2 border-green-700">
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary-dark">
             <h3 className="text-2xl font-bold mb-6 text-white">Funding sources</h3>
             <ul className="space-y-4 text-white">
               <li className="flex items-start">
@@ -26,7 +26,7 @@ const PolicyChoice = () => {
             </ul>
           </div>
 
-          <div className="bg-green-600 p-10 rounded-lg border-2 border-green-700">
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary-dark">
             <h3 className="text-2xl font-bold mb-6 text-white">Governance structure</h3>
             <ul className="space-y-4 text-white">
               <li className="flex items-start">
@@ -40,7 +40,7 @@ const PolicyChoice = () => {
             </ul>
           </div>
 
-          <div className="bg-green-600 p-10 rounded-lg border-2 border-green-700">
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary-dark">
             <h3 className="text-2xl font-bold mb-6 text-white">Investment approach</h3>
             <ul className="space-y-4 text-white">
               <li className="flex items-start">
@@ -62,7 +62,7 @@ const PolicyChoice = () => {
             </ul>
           </div>
 
-          <div className="bg-green-600 p-10 rounded-lg border-2 border-green-700">
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary-dark">
             <h3 className="text-2xl font-bold mb-6 text-white">Tax and regulatory incentives</h3>
             <ul className="space-y-4 text-white">
               <li className="flex items-start">
@@ -80,7 +80,7 @@ const PolicyChoice = () => {
             </ul>
           </div>
 
-          <div className="bg-green-600 p-10 rounded-lg border-2 border-green-700">
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary-dark">
             <h3 className="text-2xl font-bold mb-6 text-white">Accountability and measurement</h3>
             <ul className="space-y-4 text-white">
               <li className="flex items-start">
@@ -98,7 +98,7 @@ const PolicyChoice = () => {
             </ul>
           </div>
 
-          <div className="bg-green-600 p-10 rounded-lg border-2 border-green-700">
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary-dark">
             <h3 className="text-2xl font-bold mb-6 text-white">Policy alignment</h3>
             <ul className="space-y-4 text-white">
               <li className="flex items-start">
