@@ -1,4 +1,6 @@
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import problemSpaceImg from "@/assets/problemspace.jpg";
+import opportunitySpaceImg from "@/assets/opportunityspace.jpg";
 
 const WhySection = () => {
   return (
@@ -32,6 +34,11 @@ const WhySection = () => {
           <TabsContent value="problem" className="mt-8">
             <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-6 text-primary">Problem Space</h3>
+              <img 
+                src={problemSpaceImg} 
+                alt="Problem Space visualization" 
+                className="w-full rounded-lg mb-6 shadow-md"
+              />
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   South Africa continues to face deep-rooted inequalities in its economy. Despite decades of Broad-Based Black Economic Empowerment (B-BBEE) policy, many black-owned small, medium, and micro enterprises (SMMEs) still struggle to access meaningful financial resources. Traditional Enterprise and Supplier Development (ESD) programmes are fragmented and uneven in impact: contributions are made across the private sector, but the support often fails to reach those most excluded, particularly in township and rural economies.
@@ -49,6 +56,11 @@ const WhySection = () => {
           <TabsContent value="opportunity" className="mt-8">
             <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-6 text-accent">Opportunity Space</h3>
+              <img 
+                src={opportunitySpaceImg} 
+                alt="Opportunity Space visualization" 
+                className="w-full rounded-lg mb-6 shadow-md"
+              />
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   The proposed Transformation Fund offers a strong opportunity to change how South Africa finances its economic transformation. By centralising transformation funding, the Fund will combine and use resources from multiple sources such as ESD contributions, Equity Equivalent Investment Programmes (EEIP), public interest commitments and government allocations. This pooled approach will enable larger-scale investments, making capital more accessible and usable for underserved majority-black enterprises, especially in townships and rural areas.
