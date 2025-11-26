@@ -79,6 +79,24 @@ const PolicyChoice = () => {
               </li>
             </ul>
           </div>
+
+          <div className="bg-white p-10 rounded-lg border-2 border-red-200">
+            <h3 className="text-2xl font-bold mb-6 text-red-600">Accountability and measurement</h3>
+            <ul className="space-y-4 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-red-600 mr-3 font-bold">a.</span>
+                <span>A Transformation Index will be developed to measure outcomes, track inclusivity and check alignment with B-BBEE goals.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-3 font-bold">b.</span>
+                <span>The SPV will be tax-exempt, enabling funds to be fully re-invested in beneficiary enterprises.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-3 font-bold">c.</span>
+                <span>Transparency is built into the design: annual reporting on fund performance, investments and social impact is expected.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
