@@ -39,6 +39,28 @@ const PolicyChoice = () => {
               </li>
             </ul>
           </div>
+
+          <div className="bg-white p-10 rounded-lg border-2 border-red-200">
+            <h3 className="text-2xl font-bold mb-6 text-red-600">Investment approach</h3>
+            <ul className="space-y-4 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-red-600 mr-3 font-bold">a.</span>
+                <span>The Fund will offer a mix of financial products like equity, debt and grants, to meet different needs.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-3 font-bold">b.</span>
+                <span>Other forms of support such as guidance, mentorship and market access will also form part of this approach in order to assist black-owned businesses to grow sustainably.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-3 font-bold">c.</span>
+                <span>Specific focus will be on underserved areas, particularly township and rural enterprises, which will be given a priority.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-red-600 mr-3 font-bold">d.</span>
+                <span>Target sectors include productive and labour-intensive areas in economic sectors such as services, agriculture, tourism, among others.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
