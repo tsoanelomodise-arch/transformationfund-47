@@ -33,7 +33,7 @@ const WhySection = () => {
           
           <TabsContent value="problem" className="mt-8">
             <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-6xl mx-auto">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Problem Space</h3>
+              <h3 className="text-2xl font-bold mb-6 text-blue">Problem Space</h3>
               <div className="grid md:grid-cols-2 gap-8 items-start mb-6">
                 <img 
                   src={problemSpaceImg} 
