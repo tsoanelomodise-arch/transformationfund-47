@@ -12,28 +12,28 @@ const ImplementationPlan = () => {
         </div>
 
         <Tabs defaultValue="pre-launch" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-white/10 p-1 rounded-lg h-auto">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-white p-1 rounded-lg h-auto">
             <TabsTrigger 
               value="pre-launch" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-white data-[state=active]:text-primary transition-all"
+              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
             >
               Pre-Launch
             </TabsTrigger>
             <TabsTrigger 
               value="activation" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-white data-[state=active]:text-primary transition-all"
+              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
             >
               Activation
             </TabsTrigger>
             <TabsTrigger 
               value="scale-up" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-white data-[state=active]:text-primary transition-all"
+              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
             >
               Scale-Up
             </TabsTrigger>
             <TabsTrigger 
               value="institutionalisation" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-white data-[state=active]:text-primary transition-all"
+              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
             >
               Institutionalisation
             </TabsTrigger>
