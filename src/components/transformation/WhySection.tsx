@@ -1,3 +1,5 @@
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+
 const WhySection = () => {
   return (
     <section id="why" className="py-20 bg-white">
@@ -11,37 +13,46 @@ const WhySection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 card-hover">
-            <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-              <span className="text-3xl font-bold text-white">1</span>
+        <Tabs defaultValue="problem" className="w-full">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
+            <TabsTrigger value="problem">The Problem</TabsTrigger>
+            <TabsTrigger value="opportunity">The Opportunity</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="problem" className="mt-8">
+            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Problem Space</h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  South Africa continues to face deep-rooted inequalities in its economy. Despite decades of Broad-Based Black Economic Empowerment (B-BBEE) policy, many black-owned small, medium, and micro enterprises (SMMEs) still struggle to access meaningful financial resources. Traditional Enterprise and Supplier Development (ESD) programmes are fragmented and uneven in impact: contributions are made across the private sector, but the support often fails to reach those most excluded, particularly in township and rural economies.
+                </p>
+                <p>
+                  At the same time, many black entrepreneurs do not only lack capital, but they also lack critical support such as access to markets, guidance and the skills needed for scaling. Moreover, there is limited coordination in how existing transformation resources are allocated. Multiple funding streams (from ESD programmes, Equity Equivalent Investment Programme (EEIP) contributions, and other initiatives) operate separately, reducing overall efficiency.
+                </p>
+                <p>
+                  Finally, there is no single way to measure transformation outcomes in a consistent and clear way. Without a central benchmark, it is difficult to track whether economic empowerment goals are genuinely being met or not.
+                </p>
+              </div>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">The Problem</h3>
-            <p className="text-gray-700">
-              Decades of transformation initiatives have failed to create meaningful economic participation for black South Africans, women, youth, and rural communities.
-            </p>
-          </div>
-
-          <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 card-hover">
-            <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-              <span className="text-3xl font-bold text-white">2</span>
+          </TabsContent>
+          
+          <TabsContent value="opportunity" className="mt-8">
+            <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Opportunity Space</h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  The proposed Transformation Fund offers a strong opportunity to change how South Africa finances its economic transformation. By centralising transformation funding, the Fund will combine and use resources from multiple sources such as ESD contributions, Equity Equivalent Investment Programmes (EEIP), public interest commitments and government allocations. This pooled approach will enable larger-scale investments, making capital more accessible and usable for underserved majority-black enterprises, especially in townships and rural areas.
+                </p>
+                <p>
+                  Beyond financing, the Fund will provide a full range of support: debt, equity, grants and guidance all in one place. This means not only investing in enterprises, but also building their capacity, strengthening business models and connecting them to markets. Critically, it also offers a clearer and accountable structure. Through a planned Transformation Fund Index, the Fund aims to benchmark performance, track impact and show how well it is delivering on socio-economic transformation.
+                </p>
+                <p>
+                  Finally, the Fund's design promotes broad collaboration, where public, private and development sectors will work together to drive lasting transformation rather than isolated wins.
+                </p>
+              </div>
             </div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">The Opportunity</h3>
-            <p className="text-gray-700">
-              By pooling resources and creating network effects, we can achieve systemic impact that individual efforts cannot match.
-            </p>
-          </div>
-
-          <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 card-hover">
-            <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
-              <span className="text-3xl font-bold text-white">3</span>
-            </div>
-            <h3 className="text-xl font-bold mb-4 text-gray-900">The Solution</h3>
-            <p className="text-gray-700">
-              A national platform that bundles capital, capability, and market access to engineer inclusive economic growth.
-            </p>
-          </div>
-        </div>
+          </TabsContent>
+        </Tabs>
       </div>
     </section>
   );
