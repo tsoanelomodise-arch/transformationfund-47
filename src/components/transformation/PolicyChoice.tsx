@@ -97,6 +97,20 @@ const PolicyChoice = () => {
               </li>
             </ul>
           </div>
+
+          <div className="bg-primary p-10 rounded-lg border-2 border-primary">
+            <h3 className="text-2xl font-bold mb-6 text-white">Policy alignment</h3>
+            <ul className="space-y-4 text-white">
+              <li className="flex items-start">
+                <span className="mr-3 font-bold">a.</span>
+                <span>The Fund is based on existing B-BBEE legislation (no extra B-BBEE requirements are imposed on contributors beyond existing obligations).</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 font-bold">b.</span>
+                <span>It also aligns with the constitutional and policy goal to correct historical economic exclusion and promote inclusive growth.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
