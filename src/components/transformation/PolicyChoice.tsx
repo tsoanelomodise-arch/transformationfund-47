@@ -27,23 +27,15 @@ const PolicyChoice = () => {
           </div>
 
           <div className="bg-primary p-10 rounded-lg border-2 border-primary">
-            <h3 className="text-2xl font-bold mb-6 text-white">Transformation Fund Approach</h3>
+            <h3 className="text-2xl font-bold mb-6 text-white">Governance structure</h3>
             <ul className="space-y-4 text-white">
               <li className="flex items-start">
-                <span className="mr-3">✓</span>
-                <span>Coordinated national platform</span>
+                <span className="mr-3 font-bold">a.</span>
+                <span>The SPV will be governed by a Board of Directors (appointed by the Minister), plus an Oversight Committee made up of representatives from both the public and private sectors.</span>
               </li>
               <li className="flex items-start">
-                <span className="mr-3">✓</span>
-                <span>Outcome-focused with clear metrics</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3">✓</span>
-                <span>Systemic impact at scale</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3">✓</span>
-                <span>Inclusive of all historically disadvantaged groups</span>
+                <span className="mr-3 font-bold">b.</span>
+                <span>The Fund will be separate: contributions will be held in a dedicated account, with proceeds monitored and reinvested for maximum impact.</span>
               </li>
             </ul>
           </div>
