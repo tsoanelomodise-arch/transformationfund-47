@@ -7,7 +7,7 @@ const PolicyChoice = () => {
             Policy Choice: The Transformation Fund
           </h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            South Africa faces a stark choice: continue with fragmented, ineffective transformation efforts or embrace a coordinated, systemic approach that delivers real results.
+            Recognising the limitations, the Department of Trade, Industry and Competition (the dtic) has proposed establishing a dedicated Transformation Fund managed via a Special Purpose Vehicle (SPV). Key features of the Fund include:
           </p>
         </div>
 
