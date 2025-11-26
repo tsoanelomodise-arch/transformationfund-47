@@ -17,9 +17,6 @@ const TheoryOfChange = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             Theory of Change
           </h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-            Four interconnected pillars drive systemic transformation
-          </p>
         </div>
 
         <div className="bg-gray-50 rounded-lg p-8">
