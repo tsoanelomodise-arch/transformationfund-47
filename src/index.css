@@ -19,17 +19,17 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 9% 15%;
 
-    /* Transfund brand colors - rich green from logo */
-    --primary: 158 76% 30%;
+    /* Transfund brand colors - Green #007847 */
+    --primary: 158 100% 24%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 158 76% 40%;
-    --primary-dark: 158 76% 20%;
+    --primary-light: 158 100% 34%;
+    --primary-dark: 158 100% 14%;
 
     /* Complementary green accent for CTAs */
-    --accent: 134 65% 45%;
+    --accent: 158 100% 30%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 134 65% 55%;
-    --accent-hover: 134 65% 35%;
+    --accent-light: 158 100% 40%;
+    --accent-hover: 158 100% 20%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 220 9% 15%;
@@ -37,8 +37,9 @@ All colors MUST be HSL.
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Red #ff0000 */
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
@@ -49,12 +50,12 @@ All colors MUST be HSL.
       hsl(158 64% 25% / 0.70), 
       hsl(158 64% 35% / 0.70));
     
-    /* Orange brand color - #ffb81c converted to HSL */
+    /* Orange brand color - #ffb81c */
     --orange: 43 100% 56%;
-    --orange-foreground: 220 15% 9%;
+    --orange-foreground: 0 0% 0%;
     
-    /* Blue brand color from logo */
-    --blue: 210 100% 45%;
+    /* Blue brand color - #0000ff */
+    --blue: 240 100% 50%;
     --blue-foreground: 0 0% 100%;
     
     --card-shadow: 0 4px 24px hsl(220 9% 15% / 0.08);
@@ -95,15 +96,15 @@ All colors MUST be HSL.
     --popover: 220 15% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 158 76% 40%;
-    --primary-foreground: 220 15% 9%;
-    --primary-light: 158 76% 50%;
-    --primary-dark: 158 76% 30%;
+    --primary: 158 100% 30%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 158 100% 40%;
+    --primary-dark: 158 100% 20%;
 
-    --accent: 134 65% 55%;
-    --accent-foreground: 220 15% 9%;
-    --accent-light: 134 65% 65%;
-    --accent-hover: 134 65% 45%;
+    --accent: 158 100% 35%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 158 100% 45%;
+    --accent-hover: 158 100% 25%;
 
     --secondary: 220 15% 15%;
     --secondary-foreground: 210 40% 98%;
@@ -111,8 +112,9 @@ All colors MUST be HSL.
     --muted: 220 15% 15%;
     --muted-foreground: 220 9% 65%;
 
-    --destructive: 0 62.8% 50%;
-    --destructive-foreground: 210 40% 98%;
+    /* Red #ff0000 */
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 220 15% 20%;
     --input: 220 15% 20%;
@@ -123,10 +125,10 @@ All colors MUST be HSL.
       hsl(158 64% 25% / 0.70));
     
     --orange: 43 100% 56%;
-    --orange-foreground: 0 0% 100%;
+    --orange-foreground: 0 0% 0%;
     
-    /* Blue brand color from logo */
-    --blue: 210 100% 45%;
+    /* Blue brand color - #0000ff */
+    --blue: 240 100% 50%;
     --blue-foreground: 0 0% 100%;
     
     --card-shadow: 0 4px 24px hsl(0 0% 0% / 0.2);
