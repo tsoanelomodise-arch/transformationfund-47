@@ -53,6 +53,10 @@ All colors MUST be HSL.
     --orange: 43 100% 56%;
     --orange-foreground: 220 15% 9%;
     
+    /* Blue brand color from logo */
+    --blue: 210 100% 45%;
+    --blue-foreground: 0 0% 100%;
+    
     --card-shadow: 0 4px 24px hsl(220 9% 15% / 0.08);
     --card-shadow-hover: 0 8px 32px hsl(220 9% 15% / 0.12);
     
@@ -120,6 +124,10 @@ All colors MUST be HSL.
     
     --orange: 43 100% 56%;
     --orange-foreground: 0 0% 100%;
+    
+    /* Blue brand color from logo */
+    --blue: 210 100% 45%;
+    --blue-foreground: 0 0% 100%;
     
     --card-shadow: 0 4px 24px hsl(0 0% 0% / 0.2);
     --card-shadow-hover: 0 8px 32px hsl(0 0% 0% / 0.3);

@@ -17,13 +17,13 @@ const WhySection = () => {
           <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-8 p-2 bg-muted/50 rounded-full h-auto">
             <TabsTrigger 
               value="problem" 
-              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-white data-[state=active]:shadow-md transition-all"
+              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-blue data-[state=active]:text-blue-foreground data-[state=active]:shadow-md transition-all"
             >
               Problem Space
             </TabsTrigger>
             <TabsTrigger 
               value="opportunity"
-              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-white data-[state=active]:shadow-md transition-all"
+              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all"
             >
               Opportunity
             </TabsTrigger>
