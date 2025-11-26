@@ -13,23 +13,15 @@ const PolicyChoice = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div className="bg-white p-10 rounded-lg border-2 border-red-200">
-            <h3 className="text-2xl font-bold mb-6 text-red-600">Status Quo Approach</h3>
+            <h3 className="text-2xl font-bold mb-6 text-red-600">Funding sources</h3>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-start">
-                <span className="text-red-600 mr-3">✕</span>
-                <span>Fragmented initiatives lacking coordination</span>
+                <span className="text-red-600 mr-3 font-bold">a.</span>
+                <span>Combining ESD contributions, EEIP funds, public interest commitments and government seed capital.</span>
               </li>
               <li className="flex items-start">
-                <span className="text-red-600 mr-3">✕</span>
-                <span>Compliance-driven rather than outcome-focused</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-red-600 mr-3">✕</span>
-                <span>Limited scale and systemic impact</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-red-600 mr-3">✕</span>
-                <span>Exclusion of marginalized communities</span>
+                <span className="text-red-600 mr-3 font-bold">b.</span>
+                <span>Diverse resource collection to ensure sustainability and broad participation</span>
               </li>
             </ul>
           </div>
