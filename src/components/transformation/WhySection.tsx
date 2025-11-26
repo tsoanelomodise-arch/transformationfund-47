@@ -14,14 +14,24 @@ const WhySection = () => {
         </div>
 
         <Tabs defaultValue="problem" className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-            <TabsTrigger value="problem">The Problem</TabsTrigger>
-            <TabsTrigger value="opportunity">The Opportunity</TabsTrigger>
+          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-8 p-2 bg-muted/50 rounded-full h-auto">
+            <TabsTrigger 
+              value="problem" 
+              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-white data-[state=active]:shadow-md transition-all"
+            >
+              Problem Space
+            </TabsTrigger>
+            <TabsTrigger 
+              value="opportunity"
+              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-white data-[state=active]:shadow-md transition-all"
+            >
+              Opportunity
+            </TabsTrigger>
           </TabsList>
           
           <TabsContent value="problem" className="mt-8">
             <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-4xl mx-auto">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Problem Space</h3>
+              <h3 className="text-2xl font-bold mb-6 text-primary">Problem Space</h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   South Africa continues to face deep-rooted inequalities in its economy. Despite decades of Broad-Based Black Economic Empowerment (B-BBEE) policy, many black-owned small, medium, and micro enterprises (SMMEs) still struggle to access meaningful financial resources. Traditional Enterprise and Supplier Development (ESD) programmes are fragmented and uneven in impact: contributions are made across the private sector, but the support often fails to reach those most excluded, particularly in township and rural economies.
@@ -38,7 +48,7 @@ const WhySection = () => {
           
           <TabsContent value="opportunity" className="mt-8">
             <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-4xl mx-auto">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Opportunity Space</h3>
+              <h3 className="text-2xl font-bold mb-6 text-accent">Opportunity Space</h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
                   The proposed Transformation Fund offers a strong opportunity to change how South Africa finances its economic transformation. By centralising transformation funding, the Fund will combine and use resources from multiple sources such as ESD contributions, Equity Equivalent Investment Programmes (EEIP), public interest commitments and government allocations. This pooled approach will enable larger-scale investments, making capital more accessible and usable for underserved majority-black enterprises, especially in townships and rural areas.
