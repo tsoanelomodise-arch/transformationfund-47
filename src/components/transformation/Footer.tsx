@@ -24,6 +24,15 @@ const Footer = () => {
                 <p className="text-white opacity-90">info@sa-transformationfund.co.za</p>
               </div>
             </div>
+            <div className="mt-6">
+              <a href="https://scan.page/p/jJshR7" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-all">
+                <img 
+                  src="/images/social-media-qr-code.png" 
+                  alt="Scan QR Code to connect with us" 
+                  className="w-32 h-auto rounded-lg"
+                />
+              </a>
+            </div>
           </div>
           
           {/* Right Section - Social Media */}
