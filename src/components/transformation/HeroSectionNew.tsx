@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import AboutModal from "./modals/AboutModal";
 
 const heroImages = [
   "https://sa-transformationfund.co.za/uat/images2/pink_green_clothes_.jpg",
@@ -9,6 +10,7 @@ const heroImages = [
 
 const HeroSectionNew = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -79,12 +81,12 @@ const HeroSectionNew = () => {
               Engineering an Inclusive Microeconomic Foundation for Macroeconomic Growth and Social Stability
             </h1>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="#why" 
+              <button 
+                onClick={() => setIsAboutModalOpen(true)}
                 className="bg-[#007847] text-white px-8 py-3 rounded-md text-lg font-medium hover:opacity-90 transition-all inline-block"
               >
                 Learn More
-              </a>
+              </button>
               <a 
                 href="https://nefonlineportal-ckbydma2ace2hkdq.southafricanorth-01.azurewebsites.net/" 
                 target="_blank" 
@@ -111,6 +113,8 @@ const HeroSectionNew = () => {
           </div>
         </div>
       </div>
+
+      <AboutModal open={isAboutModalOpen} onClose={() => setIsAboutModalOpen(false)} />
     </section>
   );
 };
