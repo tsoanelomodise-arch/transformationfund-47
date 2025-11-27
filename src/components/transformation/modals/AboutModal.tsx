@@ -54,30 +54,49 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
             </TabsContent>
 
             <TabsContent value="why" className="space-y-6">
-              <p className="text-gray-700 leading-relaxed">
+              <h3 className="text-3xl font-bold text-green-600 mb-4">Why Transform?</h3>
+              
+              <p className="text-gray-700 leading-relaxed text-base mb-8">
                 South Africa stands at a crossroads. Despite decades of democracy, economic inequality persists, unemployment remains stubbornly high, and too many talented entrepreneurs lack the resources to succeed. The current approach isn't working—we need systemic change.
               </p>
 
-              <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Economic Imperative</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Our economy cannot reach its full potential when the majority of our population is excluded from meaningful participation. Transformation isn't just morally right—it's economically essential.
-                </p>
-              </section>
+              <div className="space-y-6">
+                <section className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    1
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Economic Imperative</h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      Our economy cannot reach its full potential when the majority of our population is excluded from meaningful participation. Transformation isn't just morally right—it's economically essential.
+                    </p>
+                  </div>
+                </section>
 
-              <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Social Stability</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Inclusive economic growth builds social cohesion and stability. When people have opportunities to build businesses, create jobs, and generate wealth, entire communities thrive.
-                </p>
-              </section>
+                <section className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    2
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Social Stability</h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      Inclusive economic growth builds social cohesion and stability. When people have opportunities to build businesses, create jobs, and generate wealth, entire communities thrive.
+                    </p>
+                  </div>
+                </section>
 
-              <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Unlocking Potential</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  South Africa has incredible entrepreneurial talent. The Transformation Fund unlocks this potential by removing barriers and providing the support entrepreneurs need to succeed.
-                </p>
-              </section>
+                <section className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    3
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">Unlocking Potential</h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      South Africa has incredible entrepreneurial talent. The Transformation Fund unlocks this potential by removing barriers and providing the support entrepreneurs need to succeed.
+                    </p>
+                  </div>
+                </section>
+              </div>
             </TabsContent>
 
             <TabsContent value="path" className="space-y-6">
