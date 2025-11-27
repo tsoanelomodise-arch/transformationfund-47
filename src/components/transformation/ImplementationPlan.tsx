@@ -50,9 +50,11 @@ const ImplementationPlan = () => {
 
           <TabsContent value="activation" className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">Phase 2: Activation (Early Adoption)</h3>
-            <p className="leading-relaxed">
-              With fundamentals in place, the Fund launches initial programmes to deploy capital and capability support on a small scale. This phase tests the platform model in action: a first cohort of MSMEs or projects receive blended finance combined with technical support. The Fund's digital platform begins capturing telemetry data from these interventions, feeding into the Transformation Index.
-            </p>
+            <ul className="space-y-4 list-disc list-inside leading-relaxed">
+              <li>With fundamentals in place, the Fund launches initial programmes to deploy capital and capability support on a small scale.</li>
+              <li>This phase tests the platform model in action: a first cohort of MSMEs or projects receive blended finance combined with technical support.</li>
+              <li>The Fund's digital platform begins capturing telemetry data from these interventions, feeding into the Transformation Index.</li>
+            </ul>
           </TabsContent>
 
           <TabsContent value="scale-up" className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
