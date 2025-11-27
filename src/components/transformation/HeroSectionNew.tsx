@@ -37,7 +37,7 @@ const HeroSectionNew = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 w-full">
         <div className="flex justify-between items-start">
           {/* Left Side Panel - Social Media */}
-          <div className="hidden lg:block w-32 xl:w-40 mr-4 xl:mr-8 mt-[30px]">
+          <div className="hidden lg:block w-32 xl:w-40 mr-4 xl:mr-8 mt-[60px]">
             <div className="bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 xl:p-6">
               <h3 className="text-white font-medium mb-3 xl:mb-4 text-xs xl:text-sm uppercase tracking-wide">Follow Us</h3>
               <div className="flex flex-col space-y-3 xl:space-y-4">
@@ -99,7 +99,7 @@ const HeroSectionNew = () => {
           </div>
 
           {/* Right Side Panel - QR Code */}
-          <div className="hidden lg:block w-32 xl:w-40 ml-4 xl:ml-8 mt-[30px]">
+          <div className="hidden lg:block w-32 xl:w-40 ml-4 xl:ml-8 mt-[60px]">
             <div className="bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 xl:p-6">
               <h3 className="text-white font-medium mb-3 xl:mb-4 text-xs xl:text-sm uppercase tracking-wide text-center">Scan to follow us</h3>
               <a href="https://scan.page/p/jJshR7" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-all">
