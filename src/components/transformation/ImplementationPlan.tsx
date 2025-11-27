@@ -68,12 +68,11 @@ const ImplementationPlan = () => {
 
           <TabsContent value="institutionalisation" className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">Phase 4: Institutionalisation (Sustainability & Policy Embedding)</h3>
-            <p className="leading-relaxed mb-4">
-              In the final phase, the Transformation Fund transitions from a special initiative into a permanent feature of South Africa's financial architecture. The governance model is firmly entrenched – for instance, the independent board and committees become long-standing bodies with succession plans, and possibly a statutory mandate is defined for the Fund.
-            </p>
-            <p className="leading-relaxed">
-              In Phase 4, long-term funding streams are secured: for instance, budget allocations, or regulated contributions, such as a portion of B-BBEE enterprise development spend or DFI commitments, are programmatically channelled into the Fund, reducing reliance on ad-hoc fundraising.
-            </p>
+            <ul className="space-y-4 list-disc list-inside leading-relaxed">
+              <li>In the final phase, the Transformation Fund transitions from a special initiative into a permanent feature of South Africa's financial architecture.</li>
+              <li>The governance model is firmly entrenched – for instance, the independent board and committees become long-standing bodies with succession plans, and possibly a statutory mandate is defined for the Fund.</li>
+              <li>In Phase 4, long-term funding streams are secured: for instance, budget allocations, or regulated contributions, such as a portion of B-BBEE enterprise development spend or DFI commitments, are programmatically channelled into the Fund, reducing reliance on ad-hoc fundraising.</li>
+            </ul>
           </TabsContent>
         </Tabs>
       </div>
