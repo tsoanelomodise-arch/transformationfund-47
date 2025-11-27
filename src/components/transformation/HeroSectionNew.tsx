@@ -95,6 +95,20 @@ const HeroSectionNew = () => {
               </a>
             </div>
           </div>
+
+          {/* Right Side Panel - QR Code */}
+          <div className="hidden lg:block w-32 xl:w-40 ml-4 xl:ml-8">
+            <div className="bg-white bg-opacity-10 backdrop-blur-sm border border-white border-opacity-20 rounded-lg p-4 xl:p-6">
+              <h3 className="text-white font-medium mb-3 xl:mb-4 text-xs xl:text-sm uppercase tracking-wide text-center">Scan to Connect</h3>
+              <a href="https://scan.page/p/jJshR7" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-all">
+                <img 
+                  src="/images/social-media-qr-code.png" 
+                  alt="Scan QR Code to connect with us" 
+                  className="w-full h-auto rounded-lg"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
