@@ -59,9 +59,11 @@ const ImplementationPlan = () => {
 
           <TabsContent value="scale-up" className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">Phase 3: Scale-Up (Expansion and Mainstreaming)</h3>
-            <p className="leading-relaxed">
-              After successful early adoption, the Fund enters an expansion phase, scaling up the volume of investments and the breadth of support services. The Fund's digital operating system is fully deployed nationwide, onboarding many more MSMEs onto the platform and extending the capability toolkits, including adding sector-specific modules for agriculture and manufacturing. Scale-up also entails institutional mainstreaming: integrating the Fund's activities with government initiatives, including coordinating with the Jobs Fund, sector Master Plans, or provincial development programmes to avoid duplication.
-            </p>
+            <ul className="space-y-4 list-disc list-inside leading-relaxed">
+              <li>After successful early adoption, the Fund enters an expansion phase, scaling up the volume of investments and the breadth of support services.</li>
+              <li>The Fund's digital operating system is fully deployed nationwide, onboarding many more MSMEs onto the platform and extending the capability toolkits, including adding sector-specific modules for agriculture and manufacturing.</li>
+              <li>Scale-up also entails institutional mainstreaming: integrating the Fund's activities with government initiatives, including coordinating with the Jobs Fund, sector Master Plans, or provincial development programmes to avoid duplication.</li>
+            </ul>
           </TabsContent>
 
           <TabsContent value="institutionalisation" className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
