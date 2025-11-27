@@ -35,22 +35,22 @@ const WhySection = () => {
             <div className="bg-gray-50 p-8 rounded-lg border border-gray-200 max-w-6xl mx-auto">
               <h3 className="text-2xl font-bold mb-6 text-blue">Problem Space</h3>
               <div className="grid md:grid-cols-2 gap-8 items-start mb-6">
-                <img 
-                  src={problemSpaceImg} 
-                  alt="Problem Space visualization" 
-                  className="w-full rounded-lg shadow-md"
-                />
                 <div className="space-y-4">
-                  <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg">
-                    <h3 className="text-2xl font-bold text-blue-900 mb-4">
-                      Understanding the Challenges We Face
-                    </h3>
-                    <p className="text-blue-900/80 leading-relaxed text-lg">
-                      South Africa continues to face deep-rooted inequalities in its economy. Despite decades of Broad-Based Black Economic Empowerment (B-BBEE) policy, many black-owned small, medium, and micro enterprises (SMMEs) still struggle to access meaningful financial resources.
-                    </p>
-                  </div>
+                  <img 
+                    src={problemSpaceImg} 
+                    alt="Problem Space visualization" 
+                    className="w-full rounded-lg shadow-md"
+                  />
                   <p className="text-gray-700 leading-relaxed">
                     Traditional Enterprise and Supplier Development (ESD) programmes are fragmented and uneven in impact: contributions are made across the private sector, but the support often fails to reach those most excluded, particularly in township and rural economies.
+                  </p>
+                </div>
+                <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg">
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">
+                    Understanding the Challenges We Face
+                  </h3>
+                  <p className="text-blue-900/80 leading-relaxed text-lg">
+                    South Africa continues to face deep-rooted inequalities in its economy. Despite decades of Broad-Based Black Economic Empowerment (B-BBEE) policy, many black-owned small, medium, and micro enterprises (SMMEs) still struggle to access meaningful financial resources.
                   </p>
                 </div>
               </div>
