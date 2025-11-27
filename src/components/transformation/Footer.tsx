@@ -5,12 +5,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 items-start">
           {/* Left Section - Brand */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-light mb-4">Transformation Fund</h3>
-            <p className="text-lg mb-4 opacity-90 font-light">Engineering an Inclusive Future for South Africa</p>
             <img 
               src="/images/logo-white.png" 
               alt="Transformation Fund White Logo" 
-              className="mx-auto md:mx-0 mt-4" 
+              className="mx-auto md:mx-0" 
               style={{ width: '200px', height: '125px' }}
             />
           </div>
