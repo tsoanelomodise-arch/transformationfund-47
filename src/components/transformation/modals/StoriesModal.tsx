@@ -45,6 +45,11 @@ const StoriesModal = ({ open, onClose }: StoriesModalProps) => {
           {activeStory === 'thandi' && (
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">Thandi's Journey: From Exclusion to Entrepreneurship</h3>
+              <img 
+                src="/images/thandis-journey.jpg" 
+                alt="Thandi's Journey - From Exclusion to Entrepreneurship" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
               <p className="text-gray-700 leading-relaxed text-lg">
                 Thandi, a young woman from a rural village, faces multiple barriers — limited finance, markets, 
                 and networks. With bundled support from the Transformation Fund, she is able to launch a 
