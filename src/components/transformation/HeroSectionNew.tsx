@@ -77,7 +77,7 @@ const HeroSectionNew = () => {
 
           {/* Main Content */}
           <div className="flex-1 text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-lg mt-[240px]">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-lg mt-[290px]">
               Engineering an Inclusive Microeconomic Foundation for Macroeconomic Growth and Social Stability
             </h1>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
