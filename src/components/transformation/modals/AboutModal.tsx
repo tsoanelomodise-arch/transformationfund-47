@@ -21,12 +21,37 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
         
         <div className="p-6 overflow-y-auto">
           <Tabs defaultValue="building" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-6">
-              <TabsTrigger value="building">Building the Future Together</TabsTrigger>
-              <TabsTrigger value="why">Why Transform?</TabsTrigger>
-              <TabsTrigger value="path">A New Path Forward</TabsTrigger>
-              <TabsTrigger value="growth">More Than Economic Growth</TabsTrigger>
-              <TabsTrigger value="promise">Our Promise</TabsTrigger>
+            <TabsList className="grid w-full grid-cols-5 mb-6 bg-transparent gap-2 h-auto p-0">
+              <TabsTrigger 
+                value="building" 
+                className="bg-blue-600 text-white hover:bg-blue-700 data-[state=active]:bg-blue-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+              >
+                Building the Future
+              </TabsTrigger>
+              <TabsTrigger 
+                value="why" 
+                className="bg-green-600 text-white hover:bg-green-700 data-[state=active]:bg-green-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+              >
+                Why Transform?
+              </TabsTrigger>
+              <TabsTrigger 
+                value="path" 
+                className="bg-yellow-500 text-white hover:bg-yellow-600 data-[state=active]:bg-yellow-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+              >
+                A New Path
+              </TabsTrigger>
+              <TabsTrigger 
+                value="growth" 
+                className="bg-red-500 text-white hover:bg-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+              >
+                More Than Growth
+              </TabsTrigger>
+              <TabsTrigger 
+                value="promise" 
+                className="bg-purple-600 text-white hover:bg-purple-700 data-[state=active]:bg-purple-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+              >
+                Our Promise
+              </TabsTrigger>
             </TabsList>
 
             <TabsContent value="building" className="space-y-6">
