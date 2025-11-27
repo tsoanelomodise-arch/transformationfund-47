@@ -100,37 +100,75 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
             </TabsContent>
 
             <TabsContent value="path" className="space-y-6">
-              <p className="text-gray-700 leading-relaxed">
+              <h3 className="text-3xl font-bold text-orange-600 mb-4">A New Path Forward</h3>
+              
+              <p className="text-gray-700 leading-relaxed text-base mb-8">
                 The Transformation Fund represents a paradigm shift—from fragmented, compliance-driven efforts to coordinated, outcome-based systemic change. We're charting a new path that learns from the past while building for the future.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <section>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">The Old Way</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Fragmented funding mechanisms</li>
-                    <li>Compliance-focused approach</li>
-                    <li>Capital without capability</li>
-                    <li>No coordination or scale</li>
-                    <li>Limited market access</li>
-                    <li>Unclear impact measurement</li>
+                <section className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg">
+                  <h4 className="text-xl font-bold text-red-600 mb-4">The Old Way</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Fragmented funding mechanisms</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Compliance-focused approach</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Capital without capability</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>No coordination or scale</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Limited market access</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Unclear impact measurement</span>
+                    </li>
                   </ul>
                 </section>
 
-                <section>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">The New Way</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Pooled national platform</li>
-                    <li>Outcome-driven transformation</li>
-                    <li>Bundled support (capital + capability + markets)</li>
-                    <li>Coordinated systemic impact</li>
-                    <li>Guaranteed market opportunities</li>
-                    <li>Real-time impact tracking</li>
+                <section className="bg-green-50 border-l-4 border-green-600 p-6 rounded-lg">
+                  <h4 className="text-xl font-bold text-green-600 mb-4">The New Way</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Pooled national platform</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Outcome-driven transformation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Bundled support (capital + capability + markets)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Coordinated systemic impact</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Guaranteed market opportunities</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-gray-500 mt-1">•</span>
+                      <span>Real-time impact tracking</span>
+                    </li>
                   </ul>
                 </section>
               </div>
 
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed mt-6">
                 This new path doesn't just fund businesses—it builds an ecosystem where empowered enterprises can thrive, creating jobs, generating wealth, and transforming communities.
               </p>
             </TabsContent>
