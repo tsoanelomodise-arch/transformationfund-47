@@ -52,55 +52,77 @@ ${formData.message}`;
         </div>
         
         <div className="p-6 overflow-y-auto">
-          <div className="space-y-6 mb-8">
-            <div className="flex items-start space-x-3">
-              <Mail className="h-5 w-5 text-primary mt-1" />
-              <div>
-                <p className="font-medium text-gray-900">Email</p>
-                <a href="mailto:info@sa-transformationfund.co.za" className="text-primary hover:underline">
-                  info@sa-transformationfund.co.za
-                </a>
-                <br />
-                <a href="mailto:applications@nefcorp.co.za" className="text-primary hover:underline">
-                  applications@nefcorp.co.za
-                </a>
+          {/* Contact Info and Map Grid */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {/* Left Column - Contact Information */}
+            <div className="space-y-6">
+              <div className="flex items-start space-x-3">
+                <Mail className="h-5 w-5 text-primary mt-1" />
+                <div>
+                  <p className="font-medium text-gray-900">Email</p>
+                  <a href="mailto:info@sa-transformationfund.co.za" className="text-primary hover:underline">
+                    info@sa-transformationfund.co.za
+                  </a>
+                  <br />
+                  <a href="mailto:applications@nefcorp.co.za" className="text-primary hover:underline">
+                    applications@nefcorp.co.za
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <Phone className="h-5 w-5 text-primary mt-1" />
+                <div>
+                  <p className="font-medium text-gray-900">Phone</p>
+                  <a href="tel:+27861113186" className="text-primary hover:underline">
+                    +27 86 111 3186
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-primary mt-1" />
+                <div>
+                  <p className="font-medium text-gray-900">Address</p>
+                  <p className="text-gray-700">
+                    70 Grayston Drive, Sandown<br />
+                    Sandton, Gauteng, 2196<br />
+                    South Africa
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <Clock className="h-5 w-5 text-primary mt-1" />
+                <div>
+                  <p className="font-medium text-gray-900">Office Hours</p>
+                  <p className="text-gray-700">
+                    Monday - Friday: 8:00 AM - 5:00 PM<br />
+                    Saturday - Sunday: Closed
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="flex items-start space-x-3">
-              <Phone className="h-5 w-5 text-primary mt-1" />
-              <div>
-                <p className="font-medium text-gray-900">Phone</p>
-                <a href="tel:+27861113186" className="text-primary hover:underline">
-                  +27 86 111 3186
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-3">
-              <MapPin className="h-5 w-5 text-primary mt-1" />
-              <div>
-                <p className="font-medium text-gray-900">Address</p>
-                <p className="text-gray-700">
-                  70 Grayston Drive, Sandown<br />
-                  Sandton, Gauteng, 2196<br />
-                  South Africa
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-3">
-              <Clock className="h-5 w-5 text-primary mt-1" />
-              <div>
-                <p className="font-medium text-gray-900">Office Hours</p>
-                <p className="text-gray-700">
-                  Monday - Friday: 8:00 AM - 5:00 PM<br />
-                  Saturday - Sunday: Closed
-                </p>
+            {/* Right Column - Map */}
+            <div>
+              <h3 className="text-xl font-bold text-primary mb-4">Our Location</h3>
+              <div className="w-full h-[300px] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.2697844786704!2d28.051544!3d-26.107598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573493dbe26c5%3A0x1b1e2f4a4e4e4e4e!2s70%20Grayston%20Dr%2C%20Sandown%2C%20Sandton%2C%202196!5e0!3m2!1sen!2sza!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Office Location"
+                />
               </div>
             </div>
           </div>
 
+          {/* Social Media Section */}
           <div className="border-t border-gray-200 pt-6 mb-6">
             <h3 className="text-xl font-bold text-primary mb-4">Follow Us</h3>
             <div className="flex flex-wrap gap-3">
@@ -145,22 +167,6 @@ ${formData.message}`;
                   className="w-32 h-32 rounded-lg border border-gray-200"
                 />
               </a>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-200 pt-6 mb-6">
-            <h3 className="text-xl font-bold text-primary mb-4">Our Location</h3>
-            <div className="w-full h-[300px] rounded-lg overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.2697844786704!2d28.051544!3d-26.107598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573493dbe26c5%3A0x1b1e2f4a4e4e4e4e!2s70%20Grayston%20Dr%2C%20Sandown%2C%20Sandton%2C%202196!5e0!3m2!1sen!2sza!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Office Location"
-              />
             </div>
           </div>
 
