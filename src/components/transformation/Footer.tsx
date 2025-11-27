@@ -25,6 +25,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="mt-6">
+              <p className="text-white font-medium mb-3 text-sm">Scan to follow us</p>
               <a href="https://scan.page/p/jJshR7" target="_blank" rel="noopener noreferrer" className="block hover:opacity-80 transition-all">
                 <img 
                   src="/images/social-media-qr-code.png" 
