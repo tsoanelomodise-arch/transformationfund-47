@@ -41,9 +41,11 @@ const ImplementationPlan = () => {
 
           <TabsContent value="pre-launch" className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
             <h3 className="text-2xl font-bold mb-4">Phase 1: Pre-Launch (Foundational Setup)</h3>
-            <p className="leading-relaxed">
-              In this preparatory phase, the Fund's special purpose vehicle (SPV) is established and capitalised with initial commitments from aligned contributors. The digital platform and telemetry infrastructure for data and performance tracking are designed and prototyped. This includes setting up the Transformation Index framework, key metrics and data systems, and basic automation for reporting. Critically, Phase 1 focuses on institutional alignment: engaging public-sector partners to ensure the Fund's mandate complements national programmes and onboarding initial private and DFI partners through MOUs.
-            </p>
+            <ul className="space-y-4 list-disc list-inside leading-relaxed">
+              <li>In this preparatory phase, the Fund's special purpose vehicle (SPV) is established and capitalised with initial commitments from aligned contributors.</li>
+              <li>The digital platform and telemetry infrastructure for data and performance tracking are designed and prototyped. This includes setting up the Transformation Index framework, key metrics and data systems, and basic automation for reporting.</li>
+              <li>Critically, Phase 1 focuses on institutional alignment: engaging public-sector partners to ensure the Fund's mandate complements national programmes and onboarding initial private and DFI partners through MOUs.</li>
+            </ul>
           </TabsContent>
 
           <TabsContent value="activation" className="bg-white/10 p-8 rounded-lg backdrop-blur-sm">
