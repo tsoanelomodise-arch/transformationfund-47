@@ -92,6 +92,11 @@ const StoriesModal = ({ open, onClose }: StoriesModalProps) => {
           {activeStory === 'thabo' && (
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-primary">Thabo's Story: Scaling Up a Black Industrialist</h3>
+              <img 
+                src="/images/thabos-story.jpg" 
+                alt="Thabo's Story - Scaling Up a Black Industrialist" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
               <p className="text-gray-700 leading-relaxed text-lg">
                 Thabo, an ambitious entrepreneur, has proven demand but lacks capital and supply chain access. 
                 Through Fund support, he expands operations, integrates into OEM supplier networks, and 
