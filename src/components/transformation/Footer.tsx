@@ -11,6 +11,9 @@ const Footer = () => {
               className="mx-auto md:mx-0" 
               style={{ width: '200px', height: '125px' }}
             />
+            <p className="text-xs text-white opacity-80 mt-3 max-w-xs mx-auto md:mx-0">
+              Engineering an Inclusive Microeconomic Foundation for Macroeconomic Growth and Social Stability
+            </p>
           </div>
           
           {/* Center Section - Contact Details */}
