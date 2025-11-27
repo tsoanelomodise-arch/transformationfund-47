@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X, Mail, Phone, MapPin } from "lucide-react";
+import { X, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface ContactsModalProps {
@@ -87,6 +87,33 @@ ${formData.message}`;
                   South Africa
                 </p>
               </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <Clock className="h-5 w-5 text-primary mt-1" />
+              <div>
+                <p className="font-medium text-gray-900">Office Hours</p>
+                <p className="text-gray-700">
+                  Monday - Friday: 8:00 AM - 5:00 PM<br />
+                  Saturday - Sunday: Closed
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-gray-200 pt-6 mb-6">
+            <h3 className="text-xl font-bold text-primary mb-4">Our Location</h3>
+            <div className="w-full h-[300px] rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.2697844786704!2d28.051544!3d-26.107598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9573493dbe26c5%3A0x1b1e2f4a4e4e4e4e!2s70%20Grayston%20Dr%2C%20Sandown%2C%20Sandton%2C%202196!5e0!3m2!1sen!2sza!4v1234567890"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Office Location"
+              />
             </div>
           </div>
 
