@@ -30,23 +30,27 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
             </TabsList>
 
             <TabsContent value="building" className="space-y-6">
-              <p className="text-gray-700 leading-relaxed">
+              <h3 className="text-3xl font-bold text-primary mb-4">Building the Future Together</h3>
+              
+              <p className="text-gray-700 leading-relaxed text-base mb-6">
                 The Transformation Fund is South Africa's bold answer to the question: How do we build an economy that works for everyone? We're not just another funding mechanism—we're a national movement to engineer inclusive economic growth at scale.
               </p>
 
-              <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Our Vision</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  A South Africa where economic opportunity is accessible to all, where black-owned enterprises thrive, and where transformation creates shared prosperity that strengthens our nation.
-                </p>
-              </section>
+              <div className="grid md:grid-cols-2 gap-6">
+                <section className="bg-blue-50 p-6 rounded-lg">
+                  <h4 className="text-xl font-bold text-primary mb-4">Our Vision</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    A South Africa where economic opportunity is accessible to all, where black-owned enterprises thrive, and where transformation creates shared prosperity that strengthens our nation.
+                  </p>
+                </section>
 
-              <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Our Mission</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  To pool resources, coordinate efforts, and create systemic impact by providing bundled support—capital, capability, and market access—to empowered enterprises across South Africa.
-                </p>
-              </section>
+                <section className="bg-blue-50 p-6 rounded-lg">
+                  <h4 className="text-xl font-bold text-primary mb-4">Our Mission</h4>
+                  <p className="text-gray-700 leading-relaxed">
+                    To pool resources, coordinate efforts, and create systemic impact by providing bundled support—capital, capability, and market access—to empowered enterprises across South Africa.
+                  </p>
+                </section>
+              </div>
             </TabsContent>
 
             <TabsContent value="why" className="space-y-6">
