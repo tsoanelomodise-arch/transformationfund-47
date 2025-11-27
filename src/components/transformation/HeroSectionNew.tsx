@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { HelpCircle, MessageCircleQuestion } from "lucide-react";
 import AboutModal from "./modals/AboutModal";
 import FAQModal from "./modals/FAQModal";
+import ContactsModal from "./modals/ContactsModal";
 
 const heroImages = [
   "https://sa-transformationfund.co.za/uat/images2/pink_green_clothes_.jpg",
@@ -13,6 +15,7 @@ const HeroSectionNew = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
   const [isFAQModalOpen, setIsFAQModalOpen] = useState(false);
+  const [isContactsModalOpen, setIsContactsModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -113,10 +116,21 @@ const HeroSectionNew = () => {
             {/* FAQ Button */}
             <button 
               onClick={() => setIsFAQModalOpen(true)}
-              className="w-full mt-4 bg-black hover:bg-gray-900 rounded-xl flex items-center justify-center transition-all border-2 border-[#8B7355] py-3 text-white font-medium text-sm"
+              className="w-full mt-4 bg-black hover:bg-gray-900 rounded-xl flex items-center justify-center gap-2 transition-all border-2 border-[#8B7355] py-3 text-white font-medium text-sm"
               title="Frequently Asked Questions"
             >
+              <MessageCircleQuestion className="w-5 h-5" />
               FAQ
+            </button>
+            
+            {/* Need Help Button */}
+            <button 
+              onClick={() => setIsContactsModalOpen(true)}
+              className="w-full mt-2 bg-black hover:bg-gray-900 rounded-xl flex items-center justify-center gap-2 transition-all border-2 border-[#8B7355] py-3 text-white font-medium text-sm"
+              title="Contact us for help"
+            >
+              <HelpCircle className="w-5 h-5" />
+              Need Help?
             </button>
           </div>
         </div>
@@ -124,6 +138,7 @@ const HeroSectionNew = () => {
 
       <AboutModal open={isAboutModalOpen} onClose={() => setIsAboutModalOpen(false)} />
       <FAQModal open={isFAQModalOpen} onClose={() => setIsFAQModalOpen(false)} />
+      <ContactsModal open={isContactsModalOpen} onClose={() => setIsContactsModalOpen(false)} />
     </section>
   );
 };
