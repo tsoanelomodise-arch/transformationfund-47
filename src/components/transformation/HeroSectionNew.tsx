@@ -5,10 +5,10 @@ import FAQModal from "./modals/FAQModal";
 import ContactsModal from "./modals/ContactsModal";
 
 const heroImages = [
-  "https://sa-transformationfund.co.za/uat/images2/pink_green_clothes_.jpg",
-  "https://sa-transformationfund.co.za/uat/images2/chickenslady.jpg",
-  "https://sa-transformationfund.co.za/uat/images2/Hands.jpg",
-  "https://sa-transformationfund.co.za/uat/images2/black_arrow.jpg"
+  "/images/hero/pink_green_clothes.jpg",
+  "/images/hero/chickenslady.jpg",
+  "/images/hero/hands.jpg",
+  "/images/hero/black_arrow.jpg"
 ];
 
 const HeroSectionNew = () => {
