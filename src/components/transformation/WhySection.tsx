@@ -16,16 +16,16 @@ const WhySection = () => {
         </div>
 
         <Tabs defaultValue="problem" className="w-full">
-          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-8 p-2 bg-muted/50 rounded-full h-auto">
+          <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-2 mb-8 p-3 bg-muted/50 rounded-full h-auto gap-2">
             <TabsTrigger 
               value="problem" 
-              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-blue data-[state=active]:text-blue-foreground data-[state=active]:shadow-md transition-all"
+              className="rounded-full px-4 sm:px-8 py-3 text-sm sm:text-base font-bold data-[state=active]:bg-blue data-[state=active]:text-blue-foreground data-[state=active]:shadow-md transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Problem Space
             </TabsTrigger>
             <TabsTrigger 
               value="opportunity"
-              className="rounded-full px-8 py-3 text-base font-bold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all"
+              className="rounded-full px-4 sm:px-8 py-3 text-sm sm:text-base font-bold data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Opportunity
             </TabsTrigger>

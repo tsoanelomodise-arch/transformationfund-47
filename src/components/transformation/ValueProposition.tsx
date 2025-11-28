@@ -10,22 +10,22 @@ const ValueProposition = () => {
 
         <div className="bg-gray-50 rounded-lg p-8">
           <Tabs defaultValue="government" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-8 bg-white">
+            <TabsList className="grid w-full grid-cols-1 sm:grid-cols-3 mb-8 bg-white p-2 h-auto gap-2">
               <TabsTrigger 
                 value="government" 
-                className="data-[state=active]:bg-primary data-[state=active]:text-white text-gray-900"
+                className="data-[state=active]:bg-primary data-[state=active]:text-white text-gray-900 py-3 px-4 text-sm sm:text-base whitespace-normal h-auto min-h-[44px]"
               >
                 For Government & Policy Makers
               </TabsTrigger>
               <TabsTrigger 
                 value="private" 
-                className="data-[state=active]:bg-primary data-[state=active]:text-white text-gray-900"
+                className="data-[state=active]:bg-primary data-[state=active]:text-white text-gray-900 py-3 px-4 text-sm sm:text-base whitespace-normal h-auto min-h-[44px]"
               >
                 For Private Sector & Investors
               </TabsTrigger>
               <TabsTrigger 
                 value="society" 
-                className="data-[state=active]:bg-primary data-[state=active]:text-white text-gray-900"
+                className="data-[state=active]:bg-primary data-[state=active]:text-white text-gray-900 py-3 px-4 text-sm sm:text-base whitespace-normal h-auto min-h-[44px]"
               >
                 For Labour, Communities & Society
               </TabsTrigger>

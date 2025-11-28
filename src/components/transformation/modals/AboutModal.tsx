@@ -21,34 +21,34 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
         
         <div className="p-6 overflow-y-auto">
           <Tabs defaultValue="building" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-6 bg-transparent gap-2 h-auto p-0">
+            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 mb-6 bg-transparent gap-2 h-auto p-0">
               <TabsTrigger 
                 value="building" 
-                className="bg-blue-600 text-white hover:bg-blue-700 data-[state=active]:bg-blue-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+                className="bg-blue-600 text-white hover:bg-blue-700 data-[state=active]:bg-blue-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 Building the Future
               </TabsTrigger>
               <TabsTrigger 
                 value="why" 
-                className="bg-green-600 text-white hover:bg-green-700 data-[state=active]:bg-green-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+                className="bg-green-600 text-white hover:bg-green-700 data-[state=active]:bg-green-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 Why Transform?
               </TabsTrigger>
               <TabsTrigger 
                 value="path" 
-                className="bg-yellow-500 text-white hover:bg-yellow-600 data-[state=active]:bg-yellow-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+                className="bg-yellow-500 text-white hover:bg-yellow-600 data-[state=active]:bg-yellow-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 A New Path
               </TabsTrigger>
               <TabsTrigger 
                 value="growth" 
-                className="bg-red-500 text-white hover:bg-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+                className="bg-red-500 text-white hover:bg-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 More Than Growth
               </TabsTrigger>
               <TabsTrigger 
                 value="promise" 
-                className="bg-purple-600 text-white hover:bg-purple-700 data-[state=active]:bg-purple-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-3 px-4 font-semibold"
+                className="bg-purple-600 text-white hover:bg-purple-700 data-[state=active]:bg-purple-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 Our Promise
               </TabsTrigger>
