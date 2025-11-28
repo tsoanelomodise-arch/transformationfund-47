@@ -52,9 +52,11 @@ const Navigation = () => {
         </div>
         
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
-            Portal Login
-          </Button>
+          <a href="https://online.sa-transformationfund.co.za" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">
+              Portal Login
+            </Button>
+          </a>
           <Button variant="cta" size="sm">
             Apply for Funding
           </Button>
