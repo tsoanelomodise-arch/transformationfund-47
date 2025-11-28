@@ -12,28 +12,28 @@ const OperatingModel = () => {
         </div>
 
         <Tabs defaultValue="capital" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-gray-100 p-1 rounded-lg h-auto">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-gray-100 p-2 rounded-lg h-auto gap-2">
             <TabsTrigger 
               value="capital" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Access to Capital
             </TabsTrigger>
             <TabsTrigger 
               value="capability" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Access to Capability
             </TabsTrigger>
             <TabsTrigger 
               value="markets" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Access to Markets
             </TabsTrigger>
             <TabsTrigger 
               value="index" 
-              className="text-sm px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 data-[state=active]:bg-[#007847] data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Transformation Index
             </TabsTrigger>

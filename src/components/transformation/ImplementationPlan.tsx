@@ -12,28 +12,28 @@ const ImplementationPlan = () => {
         </div>
 
         <Tabs defaultValue="pre-launch" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-white p-1 rounded-lg h-auto">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-white p-2 rounded-lg h-auto gap-2">
             <TabsTrigger 
               value="pre-launch" 
-              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Pre-Launch
             </TabsTrigger>
             <TabsTrigger 
               value="activation" 
-              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Activation
             </TabsTrigger>
             <TabsTrigger 
               value="scale-up" 
-              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Scale-Up
             </TabsTrigger>
             <TabsTrigger 
               value="institutionalisation" 
-              className="text-sm px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all"
+              className="text-xs sm:text-sm px-3 sm:px-4 py-3 text-gray-600 data-[state=active]:bg-primary data-[state=active]:text-white transition-all whitespace-normal h-auto min-h-[44px]"
             >
               Institutionalisation
             </TabsTrigger>
