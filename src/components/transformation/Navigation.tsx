@@ -31,6 +31,9 @@ const Navigation = () => {
                   src="/images/logo-transformation-fund.jpg" 
                   alt="Transformation Fund Logo" 
                   className="h-14 sm:h-17 md:h-19 lg:h-24 w-auto max-w-[173px] sm:max-w-[208px] md:max-w-[242px] lg:max-w-[276px] transition-all"
+                  width="276"
+                  height="96"
+                  loading="eager"
                 />
               </button>
             </div>

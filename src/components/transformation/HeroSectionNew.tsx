@@ -109,6 +109,9 @@ const HeroSectionNew = () => {
                   src="/images/social-media-qr-code.png" 
                   alt="Scan QR Code to connect with us" 
                   className="w-full h-auto rounded-lg"
+                  width="160"
+                  height="160"
+                  loading="eager"
                 />
               </a>
             </div>

@@ -40,6 +40,9 @@ const WhySection = () => {
                     src={problemSpaceImg} 
                     alt="Problem Space visualization" 
                     className="w-full rounded-lg shadow-md"
+                    width="600"
+                    height="400"
+                    loading="lazy"
                   />
                   <p className="text-gray-700 leading-relaxed">
                     Traditional Enterprise and Supplier Development (ESD) programmes are fragmented and uneven in impact: contributions are made across the private sector, but the support often fails to reach those most excluded, particularly in township and rural economies.
@@ -73,6 +76,9 @@ const WhySection = () => {
                   src={opportunitySpaceImg} 
                   alt="Opportunity Space visualization" 
                   className="w-full rounded-lg shadow-md"
+                  width="600"
+                  height="400"
+                  loading="lazy"
                 />
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>

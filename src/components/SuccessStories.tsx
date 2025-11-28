@@ -59,6 +59,9 @@ const SuccessStories = () => {
                     src={story.logo} 
                     alt={`${story.company} logo`}
                     className="w-12 h-12 object-contain"
+                    loading="lazy"
+                    width="48"
+                    height="48"
                   />
                 </div>
                 <div>

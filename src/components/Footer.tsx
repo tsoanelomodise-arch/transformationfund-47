@@ -58,6 +58,9 @@ const Footer = () => {
                     src={partner.logo} 
                     alt={partner.name}
                     className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    loading="lazy"
+                    width="120"
+                    height="80"
                   />
                 </div>
               </CarouselItem>

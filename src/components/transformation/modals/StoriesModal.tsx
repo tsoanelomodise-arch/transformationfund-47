@@ -49,6 +49,9 @@ const StoriesModal = ({ open, onClose }: StoriesModalProps) => {
                 src="/images/thandis-journey.jpg" 
                 alt="Thandi's Journey - From Exclusion to Entrepreneurship" 
                 className="w-full h-auto rounded-lg shadow-lg"
+                width="800"
+                height="450"
+                loading="lazy"
               />
               <p className="text-gray-700 leading-relaxed text-lg">
                 Thandi, a young woman from a rural village, faces multiple barriers — limited finance, markets, 
@@ -96,6 +99,9 @@ const StoriesModal = ({ open, onClose }: StoriesModalProps) => {
                 src="/images/thabos-story.jpg" 
                 alt="Thabo's Story - Scaling Up a Black Industrialist" 
                 className="w-full h-auto rounded-lg shadow-lg"
+                width="800"
+                height="450"
+                loading="lazy"
               />
               <p className="text-gray-700 leading-relaxed text-lg">
                 Thabo, an ambitious entrepreneur, has proven demand but lacks capital and supply chain access. 
