@@ -84,7 +84,7 @@ const Navigation = () => {
 
               <button onClick={() => setContactsOpen(true)} className="nav-link">Contacts</button>
               <a 
-                href="https://nefonlineportal-ckbydma2ace2hkdq.southafricanorth-01.azurewebsites.net/" 
+                href="https://online.sa-transformationfund.co.za" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-[#007847] text-white px-6 py-2 rounded-sm text-sm font-medium hover:opacity-90 transition-all ml-4"
@@ -123,7 +123,7 @@ const Navigation = () => {
               <a href="https://sa-transformationfund.co.za/uat/resources/TransformationFundExecutiveSummary_v1_29Sept25.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">TF Executive Summary</a>
               <a href="https://sa-transformationfund.co.za/uat/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Full TF Document</a>
               <button onClick={() => setContactsOpen(true)} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Contacts</button>
-              <a href="https://nefonlineportal-ckbydma2ace2hkdq.southafricanorth-01.azurewebsites.net/" target="_blank" rel="noopener noreferrer" className="block bg-[#007847] text-white px-3 py-2 text-base font-bold hover:opacity-90 transition-all">Portal Login</a>
+              <a href="https://online.sa-transformationfund.co.za" target="_blank" rel="noopener noreferrer" className="block bg-[#007847] text-white px-3 py-2 text-base font-bold hover:opacity-90 transition-all">Portal Login</a>
             </div>
           </div>
         )}

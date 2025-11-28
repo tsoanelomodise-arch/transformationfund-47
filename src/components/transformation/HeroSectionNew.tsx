@@ -90,7 +90,7 @@ const HeroSectionNew = () => {
                 Learn More
               </button>
               <a 
-                href="https://nefonlineportal-ckbydma2ace2hkdq.southafricanorth-01.azurewebsites.net/" 
+                href="https://online.sa-transformationfund.co.za" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-white text-[#007847] px-8 py-3 rounded-md text-lg font-medium hover:bg-gray-100 transition-all inline-block"
