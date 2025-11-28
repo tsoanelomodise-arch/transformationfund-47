@@ -11,6 +11,9 @@ const Navigation = () => {
               src={transfundLogo} 
               alt="Transformation Fund" 
               className="h-10 w-auto"
+              width="180"
+              height="40"
+              loading="eager"
             />
           </a>
         </div>

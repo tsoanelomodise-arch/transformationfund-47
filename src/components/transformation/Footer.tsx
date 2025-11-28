@@ -10,6 +10,9 @@ const Footer = () => {
               alt="Transformation Fund White Logo" 
               className="mx-auto md:mx-0" 
               style={{ width: '200px', height: '125px' }}
+              width="200"
+              height="125"
+              loading="lazy"
             />
             <p className="text-xs text-white opacity-80 mt-3 max-w-xs mx-auto md:mx-0">
               Engineering an Inclusive Microeconomic Foundation for Macroeconomic Growth and Social Stability
@@ -34,6 +37,9 @@ const Footer = () => {
                   src="/images/social-media-qr-code.png" 
                   alt="Scan QR Code to connect with us" 
                   className="w-32 h-auto rounded-lg"
+                  width="128"
+                  height="128"
+                  loading="lazy"
                 />
               </a>
             </div>

@@ -165,6 +165,9 @@ ${formData.message}`;
                   src="/images/social-media-qr-code.png" 
                   alt="Scan QR Code to connect with us" 
                   className="w-32 h-32 rounded-lg border border-gray-200"
+                  width="128"
+                  height="128"
+                  loading="lazy"
                 />
               </a>
             </div>
