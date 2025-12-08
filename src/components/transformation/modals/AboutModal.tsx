@@ -55,7 +55,7 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
             </TabsList>
 
             <TabsContent value="building" className="space-y-6">
-              <h3 className="text-3xl font-bold text-primary mb-4">Building the Future Together</h3>
+              <h3 className="text-3xl font-bold text-blue-600 mb-4">Building the Future Together</h3>
               
               <p className="text-gray-700 leading-relaxed text-base mb-6">
                 The Transformation Fund is South Africa's bold answer to the question: How do we build an economy that works for everyone? We're not just another funding mechanism—we're a national movement to engineer inclusive economic growth at scale.
