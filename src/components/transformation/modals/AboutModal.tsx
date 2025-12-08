@@ -63,14 +63,14 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <section className="bg-blue-50 p-6 rounded-lg">
-                  <h4 className="text-xl font-bold text-primary mb-4">Our Vision</h4>
+                  <h4 className="text-xl font-bold text-blue-600 mb-4">Our Vision</h4>
                   <p className="text-gray-700 leading-relaxed">
                     A South Africa where economic opportunity is accessible to all, where black-owned enterprises thrive, and where transformation creates shared prosperity that strengthens our nation.
                   </p>
                 </section>
 
                 <section className="bg-blue-50 p-6 rounded-lg">
-                  <h4 className="text-xl font-bold text-primary mb-4">Our Mission</h4>
+                  <h4 className="text-xl font-bold text-blue-600 mb-4">Our Mission</h4>
                   <p className="text-gray-700 leading-relaxed">
                     To pool resources, coordinate efforts, and create systemic impact by providing bundled support—capital, capability, and market access—to empowered enterprises across South Africa.
                   </p>
