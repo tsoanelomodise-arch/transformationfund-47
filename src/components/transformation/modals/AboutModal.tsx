@@ -91,7 +91,7 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
                     1
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Economic Imperative</h4>
+                    <h4 className="text-xl font-bold text-green-600 mb-2">Economic Imperative</h4>
                     <p className="text-gray-700 leading-relaxed">
                       Our economy cannot reach its full potential when the majority of our population is excluded from meaningful participation. Transformation isn't just morally right—it's economically essential.
                     </p>
@@ -103,7 +103,7 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
                     2
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Social Stability</h4>
+                    <h4 className="text-xl font-bold text-green-600 mb-2">Social Stability</h4>
                     <p className="text-gray-700 leading-relaxed">
                       Inclusive economic growth builds social cohesion and stability. When people have opportunities to build businesses, create jobs, and generate wealth, entire communities thrive.
                     </p>
@@ -115,7 +115,7 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
                     3
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">Unlocking Potential</h4>
+                    <h4 className="text-xl font-bold text-green-600 mb-2">Unlocking Potential</h4>
                     <p className="text-gray-700 leading-relaxed">
                       South Africa has incredible entrepreneurial talent. The Transformation Fund unlocks this potential by removing barriers and providing the support entrepreneurs need to succeed.
                     </p>
