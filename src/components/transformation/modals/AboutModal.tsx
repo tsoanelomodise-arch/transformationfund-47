@@ -63,14 +63,18 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <section className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-lg">
-                  <h4 className="text-xl font-bold text-blue-600 mb-4">Our Vision</h4>
+                  <h4 className="text-xl font-bold text-blue-600 mb-4">
+                    <span className="text-blue-600 mr-2">•</span>Our Vision
+                  </h4>
                   <p className="text-gray-700 leading-relaxed">
                     A South Africa where economic opportunity is accessible to all, where black-owned enterprises thrive, and where transformation creates shared prosperity that strengthens our nation.
                   </p>
                 </section>
 
                 <section className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-lg">
-                  <h4 className="text-xl font-bold text-blue-600 mb-4">Our Mission</h4>
+                  <h4 className="text-xl font-bold text-blue-600 mb-4">
+                    <span className="text-blue-600 mr-2">•</span>Our Mission
+                  </h4>
                   <p className="text-gray-700 leading-relaxed">
                     To pool resources, coordinate efforts, and create systemic impact by providing bundled support—capital, capability, and market access—to empowered enterprises across South Africa.
                   </p>
@@ -206,28 +210,36 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
               </p>
 
               <section className="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-red-500 mb-3">Creating Jobs That Matter</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">
+                  <span className="text-red-500 mr-2">•</span>Creating Jobs That Matter
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Every job created through the Fund represents a family lifted, a community strengthened, and a future secured. We target 1 million+ jobs over 10 years—not just any jobs, but quality employment with dignity and growth potential.
                 </p>
               </section>
 
               <section className="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-red-500 mb-3">Building Generational Wealth</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">
+                  <span className="text-red-500 mr-2">•</span>Building Generational Wealth
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   By supporting black ownership and enterprise development, we're helping families build assets that can be passed down, creating generational wealth that transforms communities for decades to come.
                 </p>
               </section>
 
               <section className="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-red-500 mb-3">Empowering Women and Youth</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">
+                  <span className="text-red-500 mr-2">•</span>Empowering Women and Youth
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Special focus on women-owned enterprises and youth entrepreneurship ensures that those historically most excluded from economic opportunity become drivers of transformation.
                 </p>
               </section>
 
               <section className="bg-red-50 border-l-4 border-red-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-red-500 mb-3">Developing Rural Economies</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">
+                  <span className="text-red-500 mr-2">•</span>Developing Rural Economies
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Transformation must reach beyond urban centers. The Fund supports rural enterprise development, bringing economic opportunity to communities that have been left behind.
                 </p>
@@ -242,28 +254,36 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
               </p>
 
               <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">Accountability</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">
+                  <span className="text-purple-600 mr-2">•</span>Accountability
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Every rand deployed is tracked, every outcome measured, every impact reported. We hold ourselves accountable to the people of South Africa.
                 </p>
               </section>
 
               <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">Integrity</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">
+                  <span className="text-purple-600 mr-2">•</span>Integrity
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   We operate with the highest ethical standards, ensuring resources reach those who need them most and are used for maximum impact.
                 </p>
               </section>
 
               <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">Transparency</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">
+                  <span className="text-purple-600 mr-2">•</span>Transparency
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Real-time tracking and public reporting mean every South African can see exactly where resources go and what impact they create.
                 </p>
               </section>
 
               <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">Partnership</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">
+                  <span className="text-purple-600 mr-2">•</span>Partnership
+                </h3>
                 <p className="text-gray-700 leading-relaxed">
                   We work hand-in-hand with entrepreneurs, communities, and stakeholders to ensure our approach remains responsive, effective, and aligned with the needs of those we serve.
                 </p>
