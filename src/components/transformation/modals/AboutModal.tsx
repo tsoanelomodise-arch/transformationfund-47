@@ -21,12 +21,18 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
         
         <div className="p-6 overflow-y-auto">
           <Tabs defaultValue="building" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 mb-6 bg-transparent gap-2 h-auto p-0">
+            <TabsList className="flex flex-wrap justify-center mb-6 bg-transparent gap-2 h-auto p-0">
               <TabsTrigger 
                 value="building" 
                 className="bg-blue-600 text-white hover:bg-blue-700 data-[state=active]:bg-blue-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 Building the Future
+              </TabsTrigger>
+              <TabsTrigger 
+                value="growth" 
+                className="bg-red-500 text-white hover:bg-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
+              >
+                More Than Growth
               </TabsTrigger>
               <TabsTrigger 
                 value="why" 
@@ -39,12 +45,6 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
                 className="bg-yellow-500 text-white hover:bg-yellow-600 data-[state=active]:bg-yellow-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 A New Path
-              </TabsTrigger>
-              <TabsTrigger 
-                value="growth" 
-                className="bg-red-500 text-white hover:bg-red-600 data-[state=active]:bg-red-600 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
-              >
-                More Than Growth
               </TabsTrigger>
               <TabsTrigger 
                 value="promise" 
@@ -199,33 +199,35 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
             </TabsContent>
 
             <TabsContent value="growth" className="space-y-6">
+              <h3 className="text-3xl font-bold text-red-500 mb-4">More Than Growth</h3>
+              
               <p className="text-gray-700 leading-relaxed">
                 The Transformation Fund is about more than GDP numbers and balance sheets. It's about building a South Africa where prosperity is shared, where talent is nurtured regardless of background, and where economic participation creates dignity and opportunity.
               </p>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Creating Jobs That Matter</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">Creating Jobs That Matter</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Every job created through the Fund represents a family lifted, a community strengthened, and a future secured. We target 1 million+ jobs over 10 years—not just any jobs, but quality employment with dignity and growth potential.
                 </p>
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Building Generational Wealth</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">Building Generational Wealth</h3>
                 <p className="text-gray-700 leading-relaxed">
                   By supporting black ownership and enterprise development, we're helping families build assets that can be passed down, creating generational wealth that transforms communities for decades to come.
                 </p>
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Empowering Women and Youth</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">Empowering Women and Youth</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Special focus on women-owned enterprises and youth entrepreneurship ensures that those historically most excluded from economic opportunity become drivers of transformation.
                 </p>
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Developing Rural Economies</h3>
+                <h3 className="text-xl font-bold text-red-500 mb-3">Developing Rural Economies</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Transformation must reach beyond urban centers. The Fund supports rural enterprise development, bringing economic opportunity to communities that have been left behind.
                 </p>
@@ -233,33 +235,35 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
             </TabsContent>
 
             <TabsContent value="promise" className="space-y-6">
+              <h3 className="text-3xl font-bold text-purple-600 mb-4">Our Promise</h3>
+              
               <p className="text-gray-700 leading-relaxed">
                 The Transformation Fund makes a solemn commitment to all South Africans: we will deploy resources with integrity, measure impact with transparency, and create transformation that is real, measurable, and sustainable.
               </p>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Accountability</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">Accountability</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Every rand deployed is tracked, every outcome measured, every impact reported. We hold ourselves accountable to the people of South Africa.
                 </p>
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">Integrity</h3>
                 <p className="text-gray-700 leading-relaxed">
                   We operate with the highest ethical standards, ensuring resources reach those who need them most and are used for maximum impact.
                 </p>
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Transparency</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">Transparency</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Real-time tracking and public reporting mean every South African can see exactly where resources go and what impact they create.
                 </p>
               </section>
 
               <section>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Partnership</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-3">Partnership</h3>
                 <p className="text-gray-700 leading-relaxed">
                   We work hand-in-hand with entrepreneurs, communities, and stakeholders to ensure our approach remains responsive, effective, and aligned with the needs of those we serve.
                 </p>
