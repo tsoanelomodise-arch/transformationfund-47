@@ -132,7 +132,7 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <section className="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg">
+                <section className="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-lg">
                   <h4 className="text-xl font-bold text-orange-600 mb-4">The Old Way</h4>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
@@ -162,7 +162,7 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
                   </ul>
                 </section>
 
-                <section className="bg-green-50 border-l-4 border-green-600 p-6 rounded-lg">
+                <section className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg">
                   <h4 className="text-xl font-bold text-orange-600 mb-4">The New Way</h4>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start gap-2">
