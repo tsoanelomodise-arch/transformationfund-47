@@ -80,7 +80,7 @@ const Navigation = () => {
                 {resourcesDropdownOpen && (
                   <div className="dropdown-menu">
                     <a href="/resources/Transformation_Fund_Executive_Summary_v1_29Sept.pdf" target="_blank" rel="noopener noreferrer" className="dropdown-item">TF Executive Summary</a>
-                    <a href="https://sa-transformationfund.co.za/uat/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="dropdown-item">Full TF Document</a>
+                    <a href="/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="dropdown-item">Full TF Document</a>
                   </div>
                 )}
               </div>
@@ -124,7 +124,7 @@ const Navigation = () => {
               <button onClick={() => setStoriesOpen(true)} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Stories</button>
               <div className="block text-gray-700 px-3 py-2 text-base font-bold">Resources</div>
               <a href="/resources/Transformation_Fund_Executive_Summary_v1_29Sept.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">TF Executive Summary</a>
-              <a href="https://sa-transformationfund.co.za/uat/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Full TF Document</a>
+              <a href="/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Full TF Document</a>
               <button onClick={() => setContactsOpen(true)} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Contacts</button>
               <a href="https://online.sa-transformationfund.co.za" target="_blank" rel="noopener noreferrer" className="block bg-[#007847] text-white px-3 py-2 text-base font-bold hover:opacity-90 transition-all">Portal Login</a>
             </div>
