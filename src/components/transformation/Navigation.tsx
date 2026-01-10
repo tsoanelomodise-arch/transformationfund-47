@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import AboutModal from "./modals/AboutModal";
 import StoriesModal from "./modals/StoriesModal";
 import ContactsModal from "./modals/ContactsModal";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false);
   const [storiesOpen, setStoriesOpen] = useState(false);
   const [contactsOpen, setContactsOpen] = useState(false);
   const [whyDropdownOpen, setWhyDropdownOpen] = useState(false);
@@ -41,7 +39,7 @@ const Navigation = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
               <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
-              <button onClick={() => setAboutOpen(true)} className="nav-link">About</button>
+              <a href="/about" className="nav-link">About</a>
               
               {/* Why Dropdown */}
               <div 
@@ -113,7 +111,7 @@ const Navigation = () => {
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button onClick={() => scrollToSection('home')} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Home</button>
-              <button onClick={() => setAboutOpen(true)} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">About</button>
+              <a href="/about" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">About</a>
               <a href="#why" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Why</a>
               <a href="#policy-choice" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Policy Choice</a>
               <a href="#theory" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Theory</a>
@@ -131,7 +129,6 @@ const Navigation = () => {
           </div>
         )}
       </nav>
-      <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
       <StoriesModal open={storiesOpen} onClose={() => setStoriesOpen(false)} />
       <ContactsModal open={contactsOpen} onClose={() => setContactsOpen(false)} />
     </>
