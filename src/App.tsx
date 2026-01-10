@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Requirements from "./pages/Requirements";
 import StartupGrants from "./pages/StartupGrants";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<TransformationIndex />} />
           <Route path="/old" element={<Index />} />
+          <Route path="/about" element={<About />} />
           <Route path="/requirements" element={<Requirements />} />
           <Route path="/startup-grants" element={<StartupGrants />} />
           <Route path="*" element={<NotFound />} />
