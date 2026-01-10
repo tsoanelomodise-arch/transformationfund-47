@@ -48,7 +48,7 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
               </TabsTrigger>
               <TabsTrigger 
                 value="promise" 
-                className="bg-purple-600 text-white hover:bg-purple-700 data-[state=active]:bg-purple-700 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
+                className="bg-gray-800 text-white hover:bg-gray-900 data-[state=active]:bg-gray-900 data-[state=active]:shadow-lg data-[state=active]:scale-105 transition-all rounded-lg py-2 sm:py-3 px-2 sm:px-4 font-semibold text-xs sm:text-sm whitespace-normal"
               >
                 Our Promise
               </TabsTrigger>
@@ -247,42 +247,42 @@ const AboutModal = ({ open, onClose }: AboutModalProps) => {
             </TabsContent>
 
             <TabsContent value="promise" className="space-y-6">
-              <h3 className="text-3xl font-bold text-purple-600 mb-4">Our Promise</h3>
+              <h3 className="text-3xl font-bold text-gray-800 mb-4">Our Promise</h3>
               
               <p className="text-gray-700 leading-relaxed">
                 The Transformation Fund makes a solemn commitment to all South Africans: we will deploy resources with integrity, measure impact with transparency, and create transformation that is real, measurable, and sustainable.
               </p>
 
-              <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">
-                  <span className="text-purple-600 mr-2">•</span>Accountability
+              <section className="bg-gray-100 border-l-4 border-gray-600 p-4 rounded-lg">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  <span className="text-gray-800 mr-2">•</span>Accountability
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Every rand deployed is tracked, every outcome measured, every impact reported. We hold ourselves accountable to the people of South Africa.
                 </p>
               </section>
 
-              <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">
-                  <span className="text-purple-600 mr-2">•</span>Integrity
+              <section className="bg-gray-100 border-l-4 border-gray-600 p-4 rounded-lg">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  <span className="text-gray-800 mr-2">•</span>Integrity
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   We operate with the highest ethical standards, ensuring resources reach those who need them most and are used for maximum impact.
                 </p>
               </section>
 
-              <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">
-                  <span className="text-purple-600 mr-2">•</span>Transparency
+              <section className="bg-gray-100 border-l-4 border-gray-600 p-4 rounded-lg">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  <span className="text-gray-800 mr-2">•</span>Transparency
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Real-time tracking and public reporting mean every South African can see exactly where resources go and what impact they create.
                 </p>
               </section>
 
-              <section className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-lg">
-                <h3 className="text-xl font-bold text-purple-600 mb-3">
-                  <span className="text-purple-600 mr-2">•</span>Partnership
+              <section className="bg-gray-100 border-l-4 border-gray-600 p-4 rounded-lg">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  <span className="text-gray-800 mr-2">•</span>Partnership
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   We work hand-in-hand with entrepreneurs, communities, and stakeholders to ensure our approach remains responsive, effective, and aligned with the needs of those we serve.

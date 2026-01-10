@@ -70,7 +70,7 @@ const Footer = () => {
         
         <div className="mt-16 pt-8 border-t border-white/20 text-center">
           <p className="text-white/60 text-sm">
-            © 2024 Transformation Fund. All rights reserved. | Building an inclusive economy for all South Africans.
+            © 2026 Transformation Fund. All rights reserved. | Building an inclusive economy for all South Africans.
           </p>
         </div>
       </div>
