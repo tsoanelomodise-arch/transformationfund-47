@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import StoriesModal from "./modals/StoriesModal";
 import ContactsModal from "./modals/ContactsModal";
@@ -10,11 +11,27 @@ const Navigation = () => {
   const [whyDropdownOpen, setWhyDropdownOpen] = useState(false);
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHomePage = location.pathname === "/" || location.pathname === "";
+
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    
+    if (isHomePage) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate(`/#${id}`);
+    }
+  };
+
+  const handleHashLink = (e: React.MouseEvent<HTMLAnchorElement>, hash: string) => {
+    if (!isHomePage) {
+      e.preventDefault();
+      navigate(`/${hash}`);
     }
   };
 
@@ -24,7 +41,7 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
           <div className="flex justify-between items-center h-12 sm:h-14 md:h-16 lg:h-18">
             <div className="flex items-center">
-              <button onClick={() => scrollToSection('home')} className="cursor-pointer pt-5">
+              <button onClick={() => isHomePage ? scrollToSection('home') : navigate('/')} className="cursor-pointer pt-5">
                 <img 
                   src="/images/logo-transformation-fund.jpg" 
                   alt="Transformation Fund Logo" 
@@ -47,18 +64,18 @@ const Navigation = () => {
                 onMouseEnter={() => setWhyDropdownOpen(true)}
                 onMouseLeave={() => setWhyDropdownOpen(false)}
               >
-                <a href="#why" className="nav-link flex items-center">
+                <a href={isHomePage ? "#why" : "/#why"} className="nav-link flex items-center" onClick={(e) => handleHashLink(e, "#why")}>
                   Why
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </a>
                 {whyDropdownOpen && (
                   <div className="dropdown-menu">
-                    <a href="#policy-choice" className="dropdown-item">Policy Choice</a>
-                    <a href="#theory" className="dropdown-item">Theory</a>
-                    <a href="#value" className="dropdown-item">Value</a>
-                    <a href="#operating-model" className="dropdown-item">Operating Model</a>
-                    <a href="#implementation" className="dropdown-item">Implementation</a>
-                    <a href="#national-agenda" className="dropdown-item">National Agenda</a>
+                    <a href={isHomePage ? "#policy-choice" : "/#policy-choice"} className="dropdown-item" onClick={(e) => handleHashLink(e, "#policy-choice")}>Policy Choice</a>
+                    <a href={isHomePage ? "#theory" : "/#theory"} className="dropdown-item" onClick={(e) => handleHashLink(e, "#theory")}>Theory</a>
+                    <a href={isHomePage ? "#value" : "/#value"} className="dropdown-item" onClick={(e) => handleHashLink(e, "#value")}>Value</a>
+                    <a href={isHomePage ? "#operating-model" : "/#operating-model"} className="dropdown-item" onClick={(e) => handleHashLink(e, "#operating-model")}>Operating Model</a>
+                    <a href={isHomePage ? "#implementation" : "/#implementation"} className="dropdown-item" onClick={(e) => handleHashLink(e, "#implementation")}>Implementation</a>
+                    <a href={isHomePage ? "#national-agenda" : "/#national-agenda"} className="dropdown-item" onClick={(e) => handleHashLink(e, "#national-agenda")}>National Agenda</a>
                   </div>
                 )}
               </div>
@@ -112,13 +129,13 @@ const Navigation = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button onClick={() => scrollToSection('home')} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Home</button>
               <a href="/about" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">About</a>
-              <a href="#why" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Why</a>
-              <a href="#policy-choice" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Policy Choice</a>
-              <a href="#theory" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Theory</a>
-              <a href="#value" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Value</a>
-              <a href="#operating-model" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Operating Model</a>
-              <a href="#implementation" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Implementation</a>
-              <a href="#national-agenda" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">National Agenda</a>
+              <a href={isHomePage ? "#why" : "/#why"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold" onClick={(e) => { handleHashLink(e, "#why"); setMobileMenuOpen(false); }}>Why</a>
+              <a href={isHomePage ? "#policy-choice" : "/#policy-choice"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#policy-choice"); setMobileMenuOpen(false); }}>Policy Choice</a>
+              <a href={isHomePage ? "#theory" : "/#theory"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#theory"); setMobileMenuOpen(false); }}>Theory</a>
+              <a href={isHomePage ? "#value" : "/#value"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#value"); setMobileMenuOpen(false); }}>Value</a>
+              <a href={isHomePage ? "#operating-model" : "/#operating-model"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#operating-model"); setMobileMenuOpen(false); }}>Operating Model</a>
+              <a href={isHomePage ? "#implementation" : "/#implementation"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#implementation"); setMobileMenuOpen(false); }}>Implementation</a>
+              <a href={isHomePage ? "#national-agenda" : "/#national-agenda"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#national-agenda"); setMobileMenuOpen(false); }}>National Agenda</a>
               <button onClick={() => setStoriesOpen(true)} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Stories</button>
               <div className="block text-gray-700 px-3 py-2 text-base font-bold">Resources</div>
               <a href="/resources/Transformation_Fund_Executive_Summary_v1_29Sept.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">TF Executive Summary</a>
