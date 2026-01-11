@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
-import StoriesModal from "./modals/StoriesModal";
 import ContactsModal from "./modals/ContactsModal";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [storiesOpen, setStoriesOpen] = useState(false);
   const [contactsOpen, setContactsOpen] = useState(false);
   const [whyDropdownOpen, setWhyDropdownOpen] = useState(false);
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
@@ -80,7 +78,7 @@ const Navigation = () => {
                 )}
               </div>
 
-              <button onClick={() => setStoriesOpen(true)} className="nav-link">Stories</button>
+              <a href="/stories" className="nav-link">Stories</a>
               
               {/* Resources Dropdown */}
               <div 
@@ -136,7 +134,7 @@ const Navigation = () => {
               <a href={isHomePage ? "#operating-model" : "/#operating-model"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#operating-model"); setMobileMenuOpen(false); }}>Operating Model</a>
               <a href={isHomePage ? "#implementation" : "/#implementation"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#implementation"); setMobileMenuOpen(false); }}>Implementation</a>
               <a href={isHomePage ? "#national-agenda" : "/#national-agenda"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#national-agenda"); setMobileMenuOpen(false); }}>National Agenda</a>
-              <button onClick={() => setStoriesOpen(true)} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Stories</button>
+              <a href="/stories" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Stories</a>
               <div className="block text-gray-700 px-3 py-2 text-base font-bold">Resources</div>
               <a href="/resources/Transformation_Fund_Executive_Summary_v1_29Sept.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">TF Executive Summary</a>
               <a href="/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Full TF Document</a>
@@ -146,7 +144,6 @@ const Navigation = () => {
           </div>
         )}
       </nav>
-      <StoriesModal open={storiesOpen} onClose={() => setStoriesOpen(false)} />
       <ContactsModal open={contactsOpen} onClose={() => setContactsOpen(false)} />
     </>
   );
