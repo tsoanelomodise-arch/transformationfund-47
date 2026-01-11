@@ -51,10 +51,6 @@ const Navigation = () => {
               </button>
             </div>
 
-            {/* Desktop Search */}
-            <div className="hidden md:flex items-center mr-2">
-              <SearchTrigger onClick={() => setSearchOpen(true)} />
-            </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
@@ -103,6 +99,7 @@ const Navigation = () => {
               </div>
 
               <a href="/contacts" className="nav-link">Contacts</a>
+              <SearchTrigger onClick={() => setSearchOpen(true)} />
               <a 
                 href="https://online.sa-transformationfund.co.za" 
                 target="_blank" 
