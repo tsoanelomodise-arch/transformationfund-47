@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navigation from "@/components/transformation/Navigation";
 import HeroSectionNew from "@/components/transformation/HeroSectionNew";
 import WhySection from "@/components/transformation/WhySection";
@@ -12,6 +13,20 @@ import ScrollToTop from "@/components/transformation/ScrollToTop";
 import Footer from "@/components/transformation/Footer";
 
 const TransformationIndex = () => {
+  const location = useLocation();
+
+  // Handle hash navigation after page load/navigation
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location.hash]);
+
   useEffect(() => {
     // Fade in animations
     const fadeElements = document.querySelectorAll('.fade-in');
