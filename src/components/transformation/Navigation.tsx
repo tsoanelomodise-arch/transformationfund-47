@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { SearchDialog, SearchTrigger } from "@/components/search";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [whyDropdownOpen, setWhyDropdownOpen] = useState(false);
   const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -47,6 +49,11 @@ const Navigation = () => {
                   loading="eager"
                 />
               </button>
+            </div>
+
+            {/* Desktop Search */}
+            <div className="hidden md:flex items-center mr-2">
+              <SearchTrigger onClick={() => setSearchOpen(true)} />
             </div>
 
             {/* Desktop Navigation */}
@@ -107,7 +114,8 @@ const Navigation = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="md:hidden flex items-center gap-2">
+              <SearchTrigger onClick={() => setSearchOpen(true)} variant="mobile" />
               <button 
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="text-gray-700 hover:text-[#007847] focus:outline-none"
@@ -140,6 +148,9 @@ const Navigation = () => {
           </div>
         )}
       </nav>
+
+      {/* Search Dialog */}
+      <SearchDialog open={searchOpen} onOpenChange={setSearchOpen} />
     </>
   );
 };
