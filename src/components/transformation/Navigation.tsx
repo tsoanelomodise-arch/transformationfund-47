@@ -51,7 +51,6 @@ const Navigation = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
-              <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
               <a href="/about" className="nav-link">About</a>
               
               {/* Why Dropdown */}
@@ -123,7 +122,6 @@ const Navigation = () => {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <button onClick={() => scrollToSection('home')} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold text-left w-full">Home</button>
               <a href="/about" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">About</a>
               <a href={isHomePage ? "#why" : "/#why"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold" onClick={(e) => { handleHashLink(e, "#why"); setMobileMenuOpen(false); }}>Why</a>
               <a href={isHomePage ? "#policy-choice" : "/#policy-choice"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#policy-choice"); setMobileMenuOpen(false); }}>Policy Choice</a>
