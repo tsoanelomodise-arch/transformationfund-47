@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Navigation from "@/components/transformation/Navigation";
 import Footer from "@/components/transformation/Footer";
+import { validateAndSanitizeContactForm, buildSafeMailtoLink } from "@/lib/validation/contact-form";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
@@ -12,20 +13,28 @@ const Contacts = () => {
     telephone: '',
     message: ''
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
     
-    const emailSubject = `Contact Form Submission from ${formData.firstName} ${formData.surname}`;
-    const emailBody = `Name: ${formData.firstName} ${formData.surname}
-Email: ${formData.email}
-Telephone: ${formData.telephone}
-
-Message:
-${formData.message}`;
-
-    const mailtoLink = `mailto:info@sa-transformationfund.co.za,applications@nefcorp.co.za?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    const validationResult = validateAndSanitizeContactForm(formData);
+    
+    if (!validationResult.success) {
+      if ('errors' in validationResult) {
+        setErrors(validationResult.errors);
+      }
+      toast({
+        title: "Validation Error",
+        description: "Please correct the highlighted fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    const mailtoLink = buildSafeMailtoLink(validationResult.sanitizedData);
     window.location.href = mailtoLink;
 
     toast({
@@ -187,10 +196,12 @@ ${formData.message}`;
                   type="text"
                   id="firstName"
                   required
+                  maxLength={50}
                   value={formData.firstName}
                   onChange={(e) => setFormData({...formData, firstName: e.target.value})}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground ${errors.firstName ? 'border-destructive' : 'border-border'}`}
                 />
+                {errors.firstName && <p className="text-sm text-destructive mt-1">{errors.firstName}</p>}
               </div>
               <div>
                 <label htmlFor="surname" className="block text-sm font-medium text-foreground mb-2">
@@ -200,10 +211,12 @@ ${formData.message}`;
                   type="text"
                   id="surname"
                   required
+                  maxLength={50}
                   value={formData.surname}
                   onChange={(e) => setFormData({...formData, surname: e.target.value})}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground ${errors.surname ? 'border-destructive' : 'border-border'}`}
                 />
+                {errors.surname && <p className="text-sm text-destructive mt-1">{errors.surname}</p>}
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
@@ -215,10 +228,12 @@ ${formData.message}`;
                   type="email"
                   id="email"
                   required
+                  maxLength={255}
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground ${errors.email ? 'border-destructive' : 'border-border'}`}
                 />
+                {errors.email && <p className="text-sm text-destructive mt-1">{errors.email}</p>}
               </div>
               <div>
                 <label htmlFor="telephone" className="block text-sm font-medium text-foreground mb-2">
@@ -228,10 +243,12 @@ ${formData.message}`;
                   type="tel"
                   id="telephone"
                   required
+                  maxLength={20}
                   value={formData.telephone}
                   onChange={(e) => setFormData({...formData, telephone: e.target.value})}
-                  className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground"
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground ${errors.telephone ? 'border-destructive' : 'border-border'}`}
                 />
+                {errors.telephone && <p className="text-sm text-destructive mt-1">{errors.telephone}</p>}
               </div>
             </div>
             <div>
@@ -242,10 +259,12 @@ ${formData.message}`;
                 id="message"
                 rows={5}
                 required
+                maxLength={2000}
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
-                className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground resize-vertical"
+                className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary bg-background text-foreground resize-vertical ${errors.message ? 'border-destructive' : 'border-border'}`}
               ></textarea>
+              {errors.message && <p className="text-sm text-destructive mt-1">{errors.message}</p>}
             </div>
             <div>
               <button
