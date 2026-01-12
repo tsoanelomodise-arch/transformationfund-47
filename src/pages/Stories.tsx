@@ -6,20 +6,20 @@ const Stories = () => {
   const [activeStory, setActiveStory] = useState('thandi');
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-br from-primary/10 to-primary/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Stories of Transformation
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl">
-            Real journeys of entrepreneurs who transformed their lives and communities through the Fund's support.
-          </p>
-        </div>
-      </section>
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-br from-[#007847] to-[#005a35] text-white py-16 md:py-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              Stories of Transformation
+            </h1>
+            <p className="text-xl md:text-2xl opacity-90 max-w-3xl">
+              Real journeys of entrepreneurs who transformed their lives and communities through the Fund's support.
+            </p>
+          </div>
+        </section>
 
       {/* Story Tabs */}
       <section className="py-8 bg-gray-50 border-b border-gray-200 sticky top-16 z-40">
@@ -162,6 +162,7 @@ const Stories = () => {
           )}
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
