@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { X, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { validateAndSanitizeContactForm, buildSafeMailtoLink } from "@/lib/validation/contact-form";
 
 interface ContactsModalProps {
   open: boolean;
@@ -15,22 +16,30 @@ const ContactsModal = ({ open, onClose }: ContactsModalProps) => {
     telephone: '',
     message: ''
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const { toast } = useToast();
 
   if (!open) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setErrors({});
     
-    const emailSubject = `Contact Form Submission from ${formData.firstName} ${formData.surname}`;
-    const emailBody = `Name: ${formData.firstName} ${formData.surname}
-Email: ${formData.email}
-Telephone: ${formData.telephone}
-
-Message:
-${formData.message}`;
-
-    const mailtoLink = `mailto:info@sa-transformationfund.co.za,applications@nefcorp.co.za?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    const validationResult = validateAndSanitizeContactForm(formData);
+    
+    if (!validationResult.success) {
+      if ('errors' in validationResult) {
+        setErrors(validationResult.errors);
+      }
+      toast({
+        title: "Validation Error",
+        description: "Please correct the highlighted fields.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    const mailtoLink = buildSafeMailtoLink(validationResult.sanitizedData);
     window.location.href = mailtoLink;
 
     toast({
@@ -185,10 +194,12 @@ ${formData.message}`;
                     type="text"
                     id="firstName"
                     required
+                    maxLength={50}
                     value={formData.firstName}
                     onChange={(e) => setFormData({...formData, firstName: e.target.value})}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${errors.firstName ? 'border-red-500' : 'border-gray-300'}`}
                   />
+                  {errors.firstName && <p className="text-sm text-red-500 mt-1">{errors.firstName}</p>}
                 </div>
                 <div>
                   <label htmlFor="surname" className="block text-sm font-medium text-gray-700 mb-1">
@@ -198,10 +209,12 @@ ${formData.message}`;
                     type="text"
                     id="surname"
                     required
+                    maxLength={50}
                     value={formData.surname}
                     onChange={(e) => setFormData({...formData, surname: e.target.value})}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${errors.surname ? 'border-red-500' : 'border-gray-300'}`}
                   />
+                  {errors.surname && <p className="text-sm text-red-500 mt-1">{errors.surname}</p>}
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-4">
@@ -213,10 +226,12 @@ ${formData.message}`;
                     type="email"
                     id="email"
                     required
+                    maxLength={255}
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
                   />
+                  {errors.email && <p className="text-sm text-red-500 mt-1">{errors.email}</p>}
                 </div>
                 <div>
                   <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 mb-1">
@@ -226,10 +241,12 @@ ${formData.message}`;
                     type="tel"
                     id="telephone"
                     required
+                    maxLength={20}
                     value={formData.telephone}
                     onChange={(e) => setFormData({...formData, telephone: e.target.value})}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                    className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary ${errors.telephone ? 'border-red-500' : 'border-gray-300'}`}
                   />
+                  {errors.telephone && <p className="text-sm text-red-500 mt-1">{errors.telephone}</p>}
                 </div>
               </div>
               <div>
@@ -240,10 +257,12 @@ ${formData.message}`;
                   id="message"
                   rows={4}
                   required
+                  maxLength={2000}
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-vertical"
+                  className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primary resize-vertical ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
                 ></textarea>
+                {errors.message && <p className="text-sm text-red-500 mt-1">{errors.message}</p>}
               </div>
               <div className="flex justify-end">
                 <button
