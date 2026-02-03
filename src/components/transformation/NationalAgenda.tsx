@@ -12,7 +12,7 @@ const NationalAgenda = () => {
             </p>
             
             <h3 className="text-2xl font-bold text-center mb-8 text-primary">
-              The four focus areas will be:
+              The four focus areas will be
             </h3>
             
             <div className="max-w-4xl mx-auto space-y-6 mb-12">
