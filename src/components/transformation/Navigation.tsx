@@ -80,7 +80,7 @@ const Navigation = () => {
 
               <a href="/stories" className="nav-link">Stories</a>
               
-              <a href="/resources" className="nav-link">Resources</a>
+              <span className="nav-link cursor-default">Resources</span>
 
               <a href="/contacts" className="nav-link">Contacts</a>
               <SearchTrigger onClick={() => setSearchOpen(true)} />
@@ -120,7 +120,7 @@ const Navigation = () => {
               <a href={isHomePage ? "#implementation" : "/#implementation"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#implementation"); setMobileMenuOpen(false); }}>Implementation</a>
               <a href={isHomePage ? "#national-agenda" : "/#national-agenda"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#national-agenda"); setMobileMenuOpen(false); }}>National Agenda</a>
               <a href="/stories" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Stories</a>
-              <a href="/resources" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Resources</a>
+              <span className="block text-gray-700 px-3 py-2 text-base font-bold cursor-default">Resources</span>
               <a href="/contacts" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Contacts</a>
               <a href="https://online.sa-transformationfund.co.za" target="_blank" rel="noopener noreferrer" className="block bg-[#007847] text-white px-3 py-2 text-base font-bold hover:opacity-90 transition-all">Portal Login</a>
             </div>
