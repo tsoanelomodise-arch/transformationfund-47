@@ -6,7 +6,7 @@ import { SearchDialog, SearchTrigger } from "@/components/search";
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [whyDropdownOpen, setWhyDropdownOpen] = useState(false);
-  const [resourcesDropdownOpen, setResourcesDropdownOpen] = useState(false);
+  
   const [searchOpen, setSearchOpen] = useState(false);
 
   const location = useLocation();
@@ -80,23 +80,7 @@ const Navigation = () => {
 
               <a href="/stories" className="nav-link">Stories</a>
               
-              {/* Resources Dropdown */}
-              <div 
-                className="relative dropdown"
-                onMouseEnter={() => setResourcesDropdownOpen(true)}
-                onMouseLeave={() => setResourcesDropdownOpen(false)}
-              >
-                <button className="nav-link flex items-center">
-                  Resources
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                </button>
-                {resourcesDropdownOpen && (
-                  <div className="dropdown-menu">
-                    <a href="/resources/Transformation_Fund_Executive_Summary_v1_29Sept.pdf" target="_blank" rel="noopener noreferrer" className="dropdown-item">TF Executive Summary</a>
-                    <a href="/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="dropdown-item">Full TF Document</a>
-                  </div>
-                )}
-              </div>
+              <a href="/resources" className="nav-link">Resources</a>
 
               <a href="/contacts" className="nav-link">Contacts</a>
               <SearchTrigger onClick={() => setSearchOpen(true)} />
@@ -136,9 +120,7 @@ const Navigation = () => {
               <a href={isHomePage ? "#implementation" : "/#implementation"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#implementation"); setMobileMenuOpen(false); }}>Implementation</a>
               <a href={isHomePage ? "#national-agenda" : "/#national-agenda"} className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold" onClick={(e) => { handleHashLink(e, "#national-agenda"); setMobileMenuOpen(false); }}>National Agenda</a>
               <a href="/stories" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Stories</a>
-              <div className="block text-gray-700 px-3 py-2 text-base font-bold">Resources</div>
-              <a href="/resources/Transformation_Fund_Executive_Summary_v1_29Sept.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">TF Executive Summary</a>
-              <a href="/resources/TransformationFundDocument_v2.4_28Sept25.pdf" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-[#007847] px-3 py-2 pl-6 text-sm font-semibold">Full TF Document</a>
+              <a href="/resources" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Resources</a>
               <a href="/contacts" className="block text-gray-700 hover:text-[#007847] px-3 py-2 text-base font-bold">Contacts</a>
               <a href="https://online.sa-transformationfund.co.za" target="_blank" rel="noopener noreferrer" className="block bg-[#007847] text-white px-3 py-2 text-base font-bold hover:opacity-90 transition-all">Portal Login</a>
             </div>
