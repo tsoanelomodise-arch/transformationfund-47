@@ -1,23 +1,20 @@
 
-
-# Google Analytics Integration
+# Remove TF Document Links but Keep Resources Nav
 
 ## Overview
-Add Google Analytics 4 (GA4) tracking to your Transformation Fund website using Measurement ID `G-X5E2DK9T7Z`. Since this is a publishable key, it can be safely stored in the codebase.
+Remove only the "TF Executive Summary" and "Full TF Document" dropdown items from the Resources navigation, while keeping the Resources dropdown itself intact (it will be empty for now, ready for future items).
 
-## Implementation Steps
+## Changes
 
-### 1. Add GA4 script to `index.html`
-Insert the standard Google Analytics gtag.js snippet in the `<head>` section:
-- Async script loading from `googletagmanager.com`
-- gtag configuration with the Measurement ID
+### File: `src/components/transformation/Navigation.tsx`
 
-### 2. Add route change tracking in `src/App.tsx`
-Since this is a Single Page Application (SPA), page views aren't automatically tracked on route changes. A small `useEffect` hook will be added inside the `BrowserRouter` to send a `page_view` event whenever the route changes, using `react-router-dom`'s `useLocation`.
+1. **Desktop nav (lines 94-97)**: Remove the two `<a>` links inside the dropdown menu but keep the dropdown container, converting the Resources button into a simple nav link instead (since an empty dropdown doesn't make sense). It will become a plain `<a>` link like the other nav items.
 
-## Technical Details
+2. **Mobile menu (lines 139-141)**: Remove the "Resources" label and the two document links beneath it. Replace with a simple "Resources" nav link.
 
-- **index.html**: Add the gtag.js `<script>` tags before the closing `</head>` tag
-- **src/App.tsx**: Create an `AnalyticsTracker` component that uses `useLocation` to fire `gtag('event', 'page_view', ...)` on route changes, placed inside `BrowserRouter`
-- No new dependencies required -- gtag.js loads from Google's CDN
+Since there's no dedicated `/resources` page, the Resources link will point to `/#resources` or simply remain as a non-linking label. Given the current site structure, the cleanest approach is to convert the desktop dropdown into a simple non-dropdown "Resources" nav link (matching the pattern of "About", "Stories", etc.) and do the same in mobile -- removing only the two PDF links while keeping "Resources" as a navigation item.
 
+### Summary of edits
+- **Desktop**: Replace the Resources dropdown block (lines ~85-99) with a simple `<a>` nav link
+- **Mobile**: Remove the two PDF links (lines ~140-141), keep "Resources" as a link instead of a label
+- Remove the `resourcesDropdownOpen` state variable (line 10) since the dropdown is no longer needed
