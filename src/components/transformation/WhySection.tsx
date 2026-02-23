@@ -11,7 +11,7 @@ const WhySection = () => {
             Why the Transformation Fund?
           </h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            South Africa's transformation efforts have been fragmented, compliance-driven, and insufficient to address systemic inequality. The Transformation Fund represents a bold shift: a coordinated, outcome-focused mechanism that engineers inclusive growth at scale.
+            South Africa's transformation efforts have been fragmented, compliance-driven, and insufficient to address systemic inequality. The Transformation Fund represents a bold shift: a coordinated, outcome-focused mechanism that engineers inclusive growth at scale
           </p>
         </div>
 
