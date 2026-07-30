@@ -29,6 +29,11 @@ const Footer = () => {
               <div className="mt-3">
                 <p className="text-white opacity-90">info@sa-transformationfund.co.za</p>
               </div>
+              <div className="mt-3">
+                <p className="text-white opacity-90">6th Floor, 84 Main Reef Road</p>
+                <p className="text-white opacity-90">Johannesburg, 2001, Gauteng</p>
+                <p className="text-white opacity-90">South Africa</p>
+              </div>
             </div>
             <div className="mt-6">
               <p className="text-white font-medium mb-3 text-sm">Scan to follow us</p>
