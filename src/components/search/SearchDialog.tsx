@@ -63,8 +63,25 @@ export function SearchDialog({ open, onOpenChange }: SearchDialogProps) {
       return;
     }
 
+    // Static assets (PDFs etc.) must bypass the client-side router
+    if (/\.(pdf|docx?|xlsx?|pptx?|zip|csv)$/i.test(result.url)) {
+      window.open(result.url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
     const isHomePage = location.pathname === '/' || location.pathname === '';
     
+    // FAQ content lives in a modal on the home page, not a page section
+    if (result.url.startsWith('/#faq')) {
+      if (isHomePage) {
+        window.dispatchEvent(new CustomEvent('open-faq-modal'));
+      } else {
+        navigate('/');
+        setTimeout(() => window.dispatchEvent(new CustomEvent('open-faq-modal')), 150);
+      }
+      return;
+    }
+
     // Handle hash navigation on homepage
     if (result.url.startsWith('/#')) {
       const hash = result.url.substring(2);

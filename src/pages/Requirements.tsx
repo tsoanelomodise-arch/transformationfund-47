@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
+import Modal from "@/components/Modal";
+import AssessmentQuiz from "@/components/AssessmentQuiz";
+import ScheduleConsultation from "@/components/ScheduleConsultation";
 
 const Requirements = () => {
   const requirements = [
@@ -123,6 +126,13 @@ const Requirements = () => {
       </main>
       
       <Footer />
+
+      <Modal id="assessment-modal">
+        <AssessmentQuiz />
+      </Modal>
+      <Modal id="consultation-modal">
+        <ScheduleConsultation />
+      </Modal>
     </div>
   );
 };
