@@ -6,6 +6,9 @@ import FAQ from "@/components/FAQ";
 import Resources from "@/components/Resources";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import Modal from "@/components/Modal";
+import AssessmentQuiz from "@/components/AssessmentQuiz";
+import ScheduleConsultation from "@/components/ScheduleConsultation";
 
 const Index = () => {
   return (
@@ -18,6 +21,13 @@ const Index = () => {
       <Resources />
       <FinalCTA />
       <Footer />
+
+      <Modal id="assessment-modal">
+        <AssessmentQuiz />
+      </Modal>
+      <Modal id="consultation-modal">
+        <ScheduleConsultation />
+      </Modal>
     </main>
   );
 };

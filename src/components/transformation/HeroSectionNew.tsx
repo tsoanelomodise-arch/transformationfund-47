@@ -25,6 +25,13 @@ const HeroSectionNew = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Allow other parts of the app (e.g. search) to open the FAQ modal
+  useEffect(() => {
+    const openFAQ = () => setIsFAQModalOpen(true);
+    window.addEventListener("open-faq-modal", openFAQ);
+    return () => window.removeEventListener("open-faq-modal", openFAQ);
+  }, []);
+
   return (
     <section id="home" className="relative text-white pt-12 sm:pt-14 md:pt-16 lg:pt-18 pb-8 sm:pb-12 md:pb-16 lg:pb-20 min-h-screen flex items-center overflow-hidden" role="banner" aria-label="Hero section introducing the Transformation Fund">
       {/* Background Slideshow */}
